@@ -4,6 +4,7 @@ import { Button } from '@/components/starwind/button';
 import { checkoutPathForProductId } from '../../config/checkout';
 import type { CheckoutProductId } from './CheckoutProductPicker.astro';
 import { formatPlanPrice, getProductPlans } from '../../data/productPricing';
+import { PLACEHOLDER_COPY } from '../../data/placeholders';
 
 interface Props {
   product: CheckoutProductId;
@@ -17,7 +18,7 @@ const catalog: Record<
   { label: string; detail: string; planSlug: CheckoutProductId }
 > = {
   'main-product': {
-    label: 'Arena Breakout Infinite Cheats',
+    label: PLACEHOLDER_COPY.productName,
     detail: 'Main plan — ESP, aimbot, loot displays',
     planSlug: 'main-product',
   },

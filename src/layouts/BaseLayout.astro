@@ -170,22 +170,19 @@ const showShareLinks = sharePaths.has(pathname.endsWith('/') ? pathname : `${pat
       import '../scripts/site.ts';
     </script>
     <script>
+      import { initMotion } from '../scripts/motion.ts';
+
       const bootMotion = () => {
-        import('../scripts/motion.ts')
-          .then((m) => m.initMotion())
-          .catch(() => {});
-      };
-      const scheduleMotion = () => {
         if (typeof requestIdleCallback === 'function') {
-          requestIdleCallback(bootMotion, { timeout: 2200 });
+          requestIdleCallback(() => initMotion(), { timeout: 2200 });
         } else {
-          setTimeout(bootMotion, 1);
+          initMotion();
         }
       };
       if (document.readyState === 'complete') {
-        scheduleMotion();
+        bootMotion();
       } else {
-        window.addEventListener('load', scheduleMotion, { once: true });
+        window.addEventListener('load', bootMotion, { once: true });
       }
     </script>
     {

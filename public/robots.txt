@@ -1,11 +1,4 @@
 User-agent: *
 Allow: /
-Allow: /sitemap.xml
-Allow: /og/
 
-Disallow: /go/
-
-User-agent: Googlebot
-Allow: /
-
-Sitemap: https://isle-hack.com/sitemap.xml
+Sitemap: https://bo7-cheats.com/sitemap.xml

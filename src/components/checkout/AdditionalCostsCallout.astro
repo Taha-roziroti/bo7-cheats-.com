@@ -1,9 +1,12 @@
 ---
 interface Props {
   class?: string;
+  /** Omit redundant in-page links when already on the Cloud DMA route. */
+  pagePath?: string;
 }
 
-const { class: className = '' } = Astro.props;
+const { class: className = '', pagePath = '' } = Astro.props;
+const onCloudDma = pagePath === '/cloud-dma/' || pagePath === '/cloud-dma';
 ---
 
 <aside
@@ -30,8 +33,26 @@ const { class: className = '' } = Astro.props;
     </li>
   </ul>
   <p class="mt-3 text-muted-foreground">
-    Budget for all three in addition to the license before you reach checkout. See the
-    <a class="text-primary underline-offset-2 hover:underline" href="/cloud-dma-for-arena-breakout-infinite/">Cloud DMA licensing details</a> and the
-    <a class="text-primary underline-offset-2 hover:underline" href="/guides/cloud-dma-setup/">installation and Hyper-V checklist</a> for context.
+    Budget for all three in addition to the license before you reach checkout.
+    {
+      onCloudDma ? (
+        <>
+          {' '}
+          Review the <a class="text-primary underline-offset-2 hover:underline" href="#cloud-dma-pricing">pricing section above</a>
+          {' '}
+          and the
+          <a class="text-primary underline-offset-2 hover:underline" href="/guides/bo7-cheat-requirements/"> Windows and virtualization checklist</a>
+          {' '}
+          when you plan checkout.
+        </>
+      ) : (
+        <>
+          {' '}
+          See the
+          <a class="text-primary underline-offset-2 hover:underline" href="/cloud-dma/"> Cloud DMA licensing details</a> and the
+          <a class="text-primary underline-offset-2 hover:underline" href="/guides/bo7-cheat-requirements/"> Windows and virtualization checklist</a> for context.
+        </>
+      )
+    }
   </p>
 </aside>

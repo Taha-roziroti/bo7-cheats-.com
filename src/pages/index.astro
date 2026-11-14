@@ -7,22 +7,24 @@ import { MAIN_PRODUCT_CHECKOUT } from '../data/productCatalog';
 import { PRODUCT_ID } from '../data/site';
 import { productSchema } from '../utils/schema';
 import { HERO_SECTION_LCP_PRELOAD } from '../data/showcaseImages';
+import { PLACEHOLDER_COPY } from '../data/placeholders';
+import { PRIMARY_SHOWCASE_IMAGE } from '../data/showcaseImages';
 
-const homeEntry = await loadContentPage('home');
+const homeEntry = await loadContentPage('index');
 const home = homeEntry.data as { title: string; description: string; slug: string };
 
 const jsonLd = [
   productSchema({
-    name: 'Arena Breakout Infinite Cheats',
+    name: PLACEHOLDER_COPY.productName,
     description: home.description,
     url: '/',
     offerUrl: MAIN_PRODUCT_CHECKOUT,
-    sku: 'arena-breakout-infinite-cheats',
-    image: '/images/showcase/abi-esp-indoor-aimbot.webp',
+    sku: 'main-product-placeholder',
+    image: PRIMARY_SHOWCASE_IMAGE,
     productId: PRODUCT_ID,
     offers: [
-      { name: 'Arena Breakout Infinite — Monthly', priceUsd: 35, url: MAIN_PRODUCT_CHECKOUT },
-      { name: 'Arena Breakout Infinite — Lifetime', priceUsd: 150, url: MAIN_PRODUCT_CHECKOUT },
+      { name: `${PLACEHOLDER_COPY.productName} — Monthly`, priceUsd: 35, url: MAIN_PRODUCT_CHECKOUT },
+      { name: `${PLACEHOLDER_COPY.productName} — Lifetime`, priceUsd: 150, url: MAIN_PRODUCT_CHECKOUT },
     ],
   }),
   ...jsonLdForContentPage({
@@ -39,8 +41,8 @@ const jsonLd = [
   description={home.description}
   jsonLd={jsonLd}
   ogImage="/og/home.jpg"
-  ogImageAlt="Arena Breakout Infinite Cheats"
-  logoAlt="Arena Breakout Infinite Cheats – logo"
+  ogImageAlt="Black Ops 7 Cheats for PC"
+  logoAlt={`${PLACEHOLDER_COPY.siteName} – logo`}
 >
   <link
     slot="head"

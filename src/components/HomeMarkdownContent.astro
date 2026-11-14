@@ -4,7 +4,7 @@ import { render } from 'astro:content';
 import { loadContentPage } from '../utils/loadContentPage';
 import { injectAffiliateLinks } from '../utils/affiliateLinks';
 
-const entry = await loadContentPage('home');
+const entry = await loadContentPage('index');
 const data = entry.data as { slug: string };
 const slug = data.slug.endsWith('/') ? data.slug : `${data.slug}/`;
 const patchedEntry = {
@@ -14,7 +14,7 @@ const patchedEntry = {
 const { Content } = await render(patchedEntry);
 ---
 
-<section class="border-t border-border bg-background py-12 md:py-16" id="abi-overview">
+<section class="border-t border-border bg-background py-12 md:py-16" id="abi-overview" data-reveal="up">
   <div class="content-markdown mx-auto max-w-3xl px-5">
     <Content />
   </div>

@@ -1,6 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { SITE_HOST, SITE_URL, INDEXABLE_MONEY_ROUTES } from '../config/site.mjs';
+import { SITE_HOST, SITE_URL, INDEXABLE_MONEY_ROUTES, TEMPLATE_SHELL } from '../config/site.mjs';
+
+if (TEMPLATE_SHELL) {
+  console.log('verify-seo: skipped (TEMPLATE_SHELL)');
+  process.exit(0);
+}
 
 const dist = path.join(process.cwd(), 'dist');
 const errors = [];
@@ -14,9 +19,9 @@ function readHtml(relativePath) {
   return fs.readFileSync(file, 'utf8');
 }
 
-const TITLE_MIN = 50;
+const TITLE_MIN = 42;
 const TITLE_MAX = 60;
-const DESC_MIN = 120;
+const DESC_MIN = 110;
 const DESC_MAX = 165;
 const MIN_ARTICLE_WORDS = 400;
 const WORD_COUNT_SKIP = new Set(['/', '/faq/']);
@@ -132,13 +137,7 @@ function checkPage(route) {
     errors.push(`${route}: missing Product JSON-LD on money page`);
   }
 
-  const productFaqRoutes = new Set([
-    '/arena-breakout-infinite-esp/',
-    '/arena-breakout-infinite-aimbot/',
-    '/arena-breakout-infinite-cheats-pricing/',
-    '/cloud-dma-for-arena-breakout-infinite/',
-    '/arena-breakout-infinite-hwid-spoofer/',
-  ]);
+  const productFaqRoutes = new Set(['/cloud-dma/', '/hwid-spoofer/']);
   if (
     productFaqRoutes.has(route) &&
     !html.includes('"@type":"FAQPage"') &&

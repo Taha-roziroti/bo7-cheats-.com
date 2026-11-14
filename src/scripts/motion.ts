@@ -9,12 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 let lenis: Lenis | null = null;
 let ctx: gsap.Context | null = null;
 let started = false;
+let anchorBound = false;
 
 const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-/** Lenis + heavy scroll FX are desktop-only; mobile keeps native scroll for less main-thread work. */
-const prefersLightMotion = () =>
-  window.matchMedia('(max-width: 1023px)').matches || window.matchMedia('(pointer: coarse)').matches;
 
 /** Elements already on screen at load are left alone (protects LCP and avoids flicker). */
 const isInitiallyVisible = (el: Element) => el.getBoundingClientRect().top < window.innerHeight * 0.9;
@@ -79,9 +76,12 @@ function setupParallax() {
   });
 }
 
-/** Hash links when Lenis is active (skip / data-scroll-target stay in site.ts). */
+/** In-page hash links when Lenis is active (`data-scroll-target` uses scroll-target.ts). */
 function setupAnchorNavigation() {
+  if (anchorBound) return;
+  anchorBound = true;
   document.addEventListener('click', (event) => {
+    if (!lenis) return;
     const target = event.target;
     if (!(target instanceof Element)) return;
 
@@ -95,41 +95,24 @@ function setupAnchorNavigation() {
   });
 }
 
-function startMotion() {
+export function initMotion() {
   if (started || prefersReducedMotion()) return;
   started = true;
 
-  const light = prefersLightMotion();
-
-  if (!light) {
-    lenis = new Lenis();
-    window.__lenis = lenis;
-    lenis.on('scroll', ScrollTrigger.update);
-    gsap.ticker.add(tick);
-    gsap.ticker.lagSmoothing(0);
-  }
+  lenis = new Lenis();
+  window.__lenis = lenis;
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
 
   ctx = gsap.context(() => {
-    if (!light) {
-      setupReveals();
-      setupStagger();
-      setupParallax();
-    }
+    setupReveals();
+    setupStagger();
+    setupParallax();
   });
 
-  if (!light) {
-    setupAnchorNavigation();
-    window.addEventListener('load', () => ScrollTrigger.refresh(), { once: true });
-  }
-}
-
-export function initMotion() {
-  if (prefersReducedMotion()) return;
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', startMotion, { once: true });
-  } else {
-    startMotion();
-  }
+  setupAnchorNavigation();
+  window.addEventListener('load', () => ScrollTrigger.refresh(), { once: true });
 }
 
 export function destroyMotion() {

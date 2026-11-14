@@ -1,7 +1,13 @@
 import type { IconName } from '../components/icons/types';
 
 export const featureIcons: Record<string, IconName> = {
+  'Player ESP': 'featureEsp',
   'Enemy ESP': 'featureEsp',
+  Aimbot: 'featureAimbot',
+  'Skeleton ESP': 'featureEsp',
+  '2D radar': 'featureRadar',
+  'Loot & items': 'lootEsp',
+  'Stream overlay': 'streamProof',
   'Loot ESP': 'lootEsp',
   'Soft aim': 'featureAimbot',
   Radar: 'featureRadar',

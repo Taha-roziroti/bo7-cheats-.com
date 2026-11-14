@@ -14,7 +14,8 @@
     "start": "node scripts/serve.mjs",
     "astro": "astro",
     "optimize:images": "node scripts/optimize-images.mjs",
-    "audit": "node scripts/seo-audit.mjs"
+    "audit": "node scripts/seo-audit.mjs",
+    "audit:perf": "node scripts/audit-perf.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

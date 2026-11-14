@@ -2,18 +2,20 @@ import { visit } from 'unist-util-visit';
 
 function affiliateHrefForContentSlug(slug) {
   const normalized = slug.endsWith('/') ? slug : `${slug}/`;
-  if (normalized.includes('cloud-dma-for-arena-breakout-infinite')) return '/go/cloud-dma/';
-  if (normalized.includes('hwid-spoofer')) return '/go/hwid-spoofer/';
+  if (normalized === '/cloud-dma/' || normalized.includes('cloud-dma-for-arena-breakout-infinite')) {
+    return '/go/cloud-dma/';
+  }
+  if (normalized === '/hwid-spoofer/' || normalized.includes('arena-breakout-infinite-hwid-spoofer')) {
+    return '/go/hwid-spoofer/';
+  }
   return '/go/main-product/';
 }
 
 const FILE_SLUG = [
-  ['home.md', '/'],
-  ['arena-breakout-infinite-esp.md', '/arena-breakout-infinite-esp/'],
-  ['arena-breakout-infinite-aimbot.md', '/arena-breakout-infinite-aimbot/'],
-  ['arena-breakout-infinite-cheats-pricing.md', '/arena-breakout-infinite-cheats-pricing/'],
-  ['cloud-dma-for-arena-breakout-infinite.md', '/cloud-dma-for-arena-breakout-infinite/'],
-  ['arena-breakout-infinite-hwid-spoofer.md', '/arena-breakout-infinite-hwid-spoofer/'],
+  ['index.md', '/'],
+  ['cloud-dma.md', '/cloud-dma/'],
+  ['hwid-spoofer.md', '/hwid-spoofer/'],
+  ['bo7-cheat-requirements.md', '/guides/bo7-cheat-requirements/'],
 ];
 
 function slugFromFile(file) {

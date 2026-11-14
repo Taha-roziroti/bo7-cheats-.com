@@ -11,10 +11,10 @@ const { logoAlt } = Astro.props;
 const footerLogoAlt = logoAlt?.trim() ? logoAlt : SITE_LOGO_ALT;
 
 const resourceLinks = [
-  { href: '/arena-breakout-infinite-cheats-pricing/', label: 'Pricing', ariaLabel: 'Pricing' },
+  { href: '/#products', label: 'Plans', ariaLabel: 'Plans' },
   { href: '/go/', label: 'All products', ariaLabel: 'Checkout hub' },
-  { href: '/guides/cloud-dma-setup/', label: 'Hyper-V setup guide', ariaLabel: 'Setup guide' },
-  { href: '/guides/system-requirements/', label: 'PC requirements', ariaLabel: 'Requirements' },
+  { href: '/cloud-dma/', label: 'Cloud DMA', ariaLabel: 'Cloud DMA' },
+  { href: '/guides/bo7-cheat-requirements/', label: 'PC requirements', ariaLabel: 'Requirements' },
   { href: '/support/', label: 'Support', ariaLabel: 'Support' },
 ];
 
@@ -31,7 +31,7 @@ const legalLinks = [
       <div class="space-y-4">
         <a href="/" class="inline-flex items-center gap-2.5 font-[family-name:var(--font-heading)] text-lg font-semibold" aria-label={t.ui.homeAria}>
           <img src="/logo.svg" alt={footerLogoAlt} width="32" height="32" class="rounded-md" />
-          <span aria-hidden="true">ABI <span class="text-muted-foreground">Cheats</span></span>
+          <span aria-hidden="true">{t.site.name}</span>
           <span class="sr-only"> site footer</span>
         </a>
         <p class="text-sm text-muted-foreground">{t.footer.tagline}</p>

@@ -1,14 +1,17 @@
 ---
 import { t } from '../i18n';
 import { featureIcons } from '../data/sectionIcons';
+import { FEATURE_SHOWCASE_BY_TITLE } from '../data/showcaseImages';
 import SectionHeader from './SectionHeader.astro';
 import Icon from './icons/Icon.astro';
+import ResponsiveImage from './ResponsiveImage.astro';
+import { CARD_IMAGE_SIZES, CARD_IMAGE_WIDTHS } from '../utils/responsiveImage';
 import { Badge } from '@/components/starwind/badge';
 
 const s = t.features;
 
 function isScriptsHero(title: string) {
-  return title === 'Enemy ESP';
+  return title === 'Player ESP';
 }
 ---
 
@@ -30,6 +33,7 @@ function isScriptsHero(title: string) {
       {
         s.items.map((item) => {
           const scriptsHero = isScriptsHero(item.title);
+          const showcase = FEATURE_SHOWCASE_BY_TITLE[item.title];
           return (
             <article
               class:list={[
@@ -58,6 +62,27 @@ function isScriptsHero(title: string) {
                     </header>
 
                     <div class="features-bento-scripts__body flex min-h-0 flex-1 flex-col gap-4 px-5 py-4 sm:gap-5 sm:px-6 sm:py-5">
+                      {
+                        showcase ? (
+                          <div class="overflow-hidden rounded-xl border border-border bg-muted/30 lg:col-start-2 lg:row-span-3 lg:row-start-1">
+                            <ResponsiveImage
+                              src={showcase.src}
+                              alt={showcase.alt}
+                              width={640}
+                              height={360}
+                              widths={CARD_IMAGE_WIDTHS}
+                              sizes={CARD_IMAGE_SIZES}
+                              loading="lazy"
+                              class="h-full w-full object-cover"
+                            />
+                            {showcase.caption ? (
+                              <p class="border-t border-border bg-card/80 px-3 py-2 text-xs text-muted-foreground">
+                                {showcase.caption}
+                              </p>
+                            ) : null}
+                          </div>
+                        ) : null
+                      }
                       <p class="text-sm leading-relaxed text-muted-foreground">{item.desc}</p>
 
                       {
@@ -101,6 +126,22 @@ function isScriptsHero(title: string) {
                     </header>
 
                     <div class="flex min-h-0 flex-1 flex-col gap-3 px-5 py-4 sm:px-6">
+                      {
+                        showcase ? (
+                          <div class="overflow-hidden rounded-xl border border-border bg-muted/30">
+                            <ResponsiveImage
+                              src={showcase.src}
+                              alt={showcase.alt}
+                              width={640}
+                              height={360}
+                              widths={CARD_IMAGE_WIDTHS}
+                              sizes={CARD_IMAGE_SIZES}
+                              loading="lazy"
+                              class="aspect-video w-full object-cover"
+                            />
+                          </div>
+                        ) : null
+                      }
                       <p class="text-sm leading-relaxed text-muted-foreground">{item.desc}</p>
 
                       {

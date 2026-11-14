@@ -19,38 +19,26 @@ if (!destination) {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, follow" />
-    <title>Continuing to checkout…</title>
-    <meta http-equiv="refresh" content={`0;url=${destination}`} />
+    <title>Checkout</title>
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
     <script is:inline define:vars={{ destination }}>
-      window.location.replace(destination);
+      (function () {
+        try {
+          window.location.replace(destination);
+        } catch {
+          window.location.href = destination;
+        }
+      })();
     </script>
     <style>
-      html,
+      html {
+        background: #0d0a14;
+      }
       body {
         margin: 0;
-        min-height: 100%;
-        background: #0d0a14;
-        color: #e8e4ef;
-        font-family: system-ui, sans-serif;
-      }
-      .wrap {
-        display: flex;
-        min-height: 100vh;
-        align-items: center;
-        justify-content: center;
-        padding: 1.5rem;
-      }
-      p {
-        margin: 0;
-        font-size: 0.875rem;
-        opacity: 0.85;
+        visibility: hidden;
       }
     </style>
   </head>
-  <body>
-    <div class="wrap">
-      <p>Opening checkout…</p>
-    </div>
-  </body>
+  <body></body>
 </html>

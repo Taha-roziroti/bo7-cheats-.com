@@ -1,3 +1,12 @@
 ---
-return Astro.redirect('/arena-breakout-infinite-hwid-spoofer/', 301);
+import MarkdownSeoPage from '../../components/content/MarkdownSeoPage.astro';
 ---
+
+<MarkdownSeoPage
+  id="hwid-spoofer"
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'HWID Spoofer', path: '/hwid-spoofer/' },
+  ]}
+  checkoutProduct="hwid-spoofer"
+/>

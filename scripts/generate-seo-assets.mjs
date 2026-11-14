@@ -4,7 +4,7 @@ import sharp from 'sharp';
 
 const root = process.cwd();
 const ogDir = path.join(root, 'public', 'og');
-const heroSource = path.join(root, 'public', 'images', 'showcase', 'abi-esp-indoor-aimbot.webp');
+const heroSource = path.join(root, 'public', 'images', 'showcase', 'bo7-esp-red-dot.webp');
 
 const outputs = [
   'default.jpg',

@@ -22,9 +22,15 @@ const mainProductPlans: ProductPlan[] = [
 
 const hwidSpooferPlans: ProductPlan[] = [
   {
-    id: 'onetime',
-    label: 'Lifetime access',
+    id: 'monthly',
+    label: 'Monthly',
     priceUsd: 50,
+    priceNote: 'USD · 31-day access',
+  },
+  {
+    id: 'lifetime',
+    label: 'Lifetime',
+    priceUsd: 150,
     priceNote: 'USD · one-time',
   },
 ];

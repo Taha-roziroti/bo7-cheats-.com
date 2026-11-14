@@ -6,8 +6,12 @@ const PLACEHOLDER = 'AFFILIATE_LINK_PLACEHOLDER';
 
 function hrefForFile(file) {
   const rel = file.replace(/\\/g, '/');
-  if (rel.includes('cloud-dma-for-arena-breakout-infinite')) return '/go/cloud-dma/';
-  if (rel.includes('hwid-spoofer')) return '/go/hwid-spoofer/';
+  if (rel.includes('/cloud-dma/') || rel.includes('cloud-dma-for-arena-breakout-infinite')) {
+    return '/go/cloud-dma/';
+  }
+  if (rel.includes('/hwid-spoofer/') || rel.includes('arena-breakout-infinite-hwid-spoofer')) {
+    return '/go/hwid-spoofer/';
+  }
   return '/go/main-product/';
 }
 

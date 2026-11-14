@@ -16,7 +16,6 @@ words:
   - hwid
   - srcset
   - webp
-  - isle-hack
   - Astro
   - Starwind
   - Embla
@@ -33,6 +32,14 @@ words:
   - Orbwalker
   - bento
   - Unban
+  - ZADEYO
+  - triggerbot
+  - Triggerbot
+  - Warzone
+  - BattlEye
+  - Ricochet
+  - stream-proof
+  - streamproof
 ignorePaths:
   - dist/**
   - node_modules/**

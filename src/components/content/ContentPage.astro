@@ -25,12 +25,39 @@ interface Props {
 const { id } = Astro.props;
 const entry = await loadContentPage(id);
 
-const data = entry.data;
+const raw = entry.data as {
+  route?: string;
+  slug?: string;
+  seoTitle?: string;
+  title?: string;
+  metaDescription?: string;
+  description?: string;
+  schemaTypes?: string[];
+  articlePublished?: string;
+  layout?: string;
+  checkout?: 'main-product' | 'cloud-dma' | 'hwid-spoofer';
+  figures?: { src?: string; alt: string; filename?: string }[];
+  heroImage?: { src: string; alt: string };
+  endCtaLabel?: string;
+  endCtaHref?: string;
+  showAdditionalCostsCallout?: boolean;
+  ogImage?: string;
+};
+
+const route = raw.route ?? raw.slug ?? '/';
+const data = {
+  ...raw,
+  route,
+  schemaTypes: raw.schemaTypes ?? ['TechArticle', 'BreadcrumbList'],
+  articlePublished: raw.articlePublished ?? '2026-02-01',
+  layout: raw.layout ?? 'article',
+};
+
 const { Content: FullContent } = await render(entry);
 
-const pageSeo = getPageSeoEntry(data.route);
-const layoutTitle = pageSeo?.title ?? data.seoTitle;
-const layoutDescription = pageSeo?.description ?? data.metaDescription;
+const pageSeo = getPageSeoEntry(route);
+const layoutTitle = pageSeo?.title ?? raw.seoTitle ?? raw.title ?? '';
+const layoutDescription = pageSeo?.description ?? raw.metaDescription ?? raw.description ?? '';
 
 const breadcrumbs = breadcrumbsForRoute(data.route);
 const jsonLd = jsonLdForContentPage({
@@ -59,8 +86,7 @@ const logoAltByRoute: Record<string, string> = {
   '/pricing/': 'Cheats pricing – logo',
   '/cloud-dma/': 'Cloud DMA – logo',
   '/hwid-spoofer/': 'HWID Spoofer – logo',
-  '/guides/cloud-dma-setup/': 'DMA setup – logo',
-  '/guides/system-requirements/': 'System requirements – logo',
+  '/guides/bo7-cheat-requirements/': 'BO7 system requirements – logo',
 };
 const logoAlt = logoAltByRoute[data.route];
 const pageFaqs = getContentPageFaqs(data.route);
@@ -115,7 +141,7 @@ const pageFaqTopics = pageFaqs ? faqFilterTopicsForItems(pageFaqs) : [];
               <AdditionalCostsCallout class="not-prose mt-8" />
             ) : null}
           </div>
-          <div class="hidden lg:block">
+          <div class="hidden lg:block" data-reveal="right">
             <CheckoutProductPicker defaultProduct={sidebarDefaultProduct} />
           </div>
         </div>
@@ -152,7 +178,7 @@ const pageFaqTopics = pageFaqs ? faqFilterTopicsForItems(pageFaqs) : [];
 
   {
     data.endCtaLabel ? (
-      <div class="border-t border-border bg-muted/20 py-10 md:py-12">
+      <div class="border-t border-border bg-muted/20 py-10 md:py-12" data-reveal="up">
         <div class="mx-auto flex max-w-6xl flex-col items-start gap-4 px-5">
           <p class="text-lg font-semibold text-foreground">{data.endCtaLabel}</p>
           <Button as="a" href={ctaHref} variant="primary" size="lg" class="rounded-xl">

@@ -33,12 +33,12 @@ const heroMarqueePills = [
       src={HERO_SECTION_BACKGROUND}
       alt={HERO_BACKGROUND_ALT}
       width={1024}
-      height={453}
+      height={576}
       widths={HERO_IMAGE_WIDTHS}
       sizes="100vw"
       loading="eager"
       fetchPriority="high"
-      class="absolute inset-0 h-full w-full object-cover object-[center_45%] brightness-[1.05] saturate-[1.08]"
+      class="absolute inset-0 h-full w-full object-cover object-center brightness-[1.02] saturate-[1.05]"
     />
     <div class="absolute inset-0 bg-background/40" />
     <div
@@ -53,10 +53,10 @@ const heroMarqueePills = [
       <div class="w-full max-w-xl space-y-6 text-left md:space-y-7 lg:max-w-2xl">
         <Badge variant="secondary" class="normal-case tracking-normal">{h.eyebrow}</Badge>
 
-        <h1 id="hero-title" class="text-4xl font-bold leading-[1.08] tracking-tight md:text-5xl lg:text-[3.25rem]">
+        <p id="hero-title" class="text-4xl font-bold leading-[1.08] tracking-tight md:text-5xl lg:text-[3.25rem]">
           <span class="block text-foreground">{h.titleLine1}</span>
           <span class="mt-1 block text-primary">{h.titleLine2}</span>
-        </h1>
+        </p>
 
         <p class="max-w-xl text-sm leading-relaxed text-neutral-500 dark:text-neutral-400 md:text-base">
           {h.subtitle}
@@ -75,7 +75,7 @@ const heroMarqueePills = [
           </Button>
           <Button
             as="a"
-            href="/arena-breakout-infinite-cheats-pricing/"
+            href="/#products"
             variant="secondary"
             size="lg"
             class="rounded-xl"

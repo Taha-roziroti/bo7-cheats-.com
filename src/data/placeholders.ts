@@ -1,16 +1,15 @@
-/** Default marketing copy; assets point at showcase screenshots. */
+/** Site branding — product positioning for bo7-cheats.com. */
 
-import { PRIMARY_SHOWCASE_IMAGE, SHOWCASE_SHOTS } from './showcaseImages';
-
-export const PLACEHOLDER_IMAGE = PRIMARY_SHOWCASE_IMAGE;
-export const PLACEHOLDER_IMAGE_ALT = SHOWCASE_SHOTS[1]?.alt ?? 'Arena Breakout Infinite cheat feature preview';
+export const PLACEHOLDER_IMAGE = '/images/placeholder.svg';
+export const PLACEHOLDER_IMAGE_ALT = 'Image placeholder — add your screenshot or artwork here.';
 
 export const PLACEHOLDER_COPY = {
-  title: 'Arena Breakout Infinite Cheats',
-  eyebrow: 'ABI Cheats for PC',
-  subtitle: 'Arena Breakout Infinite ESP, aimbot, loot displays, and Cloud DMA setup resources.',
-  feature: 'ESP, aimbot, loot displays, and radar-style overlays for supported Windows builds.',
-  cta: 'Explore available plans',
-  productName: 'Arena Breakout Infinite Cheats',
-  siteName: 'ABI Cheats',
+  title: 'Black Ops 7 Cheats',
+  eyebrow: 'Call of Duty · PC',
+  subtitle:
+    'Private BO7 software with aimbot, ESP, radar, and recoil controls—review live screenshots, system requirements, and plans before checkout.',
+  feature: 'Module-level controls with in-game previews from verified BO7 sessions.',
+  cta: 'View plans & checkout',
+  productName: 'Black Ops 7 Cheats',
+  siteName: 'BO7 Cheats',
 } as const;

@@ -12,6 +12,8 @@ import { breadcrumbSchema, faqPageSchemaFromPairs, webPageSchema } from '../../u
 import { SITE_NAME, ogImageForPath } from '../../data/site';
 import { faqItemsFromMarkdown } from '../../utils/markdownFaq';
 import { productJsonLdForRoute } from '../../utils/productPageJsonLd';
+import ContentFigures from './ContentFigures.astro';
+import { PAGE_SHOWCASE_SHOTS } from '../../data/showcaseImages';
 
 interface Props {
   id: string;
@@ -35,7 +37,7 @@ const entry = await loadContentPage(id);
 const data = entry.data as { title: string; description: string; slug: string };
 
 if (!('slug' in data) || !('title' in data) || !('description' in data)) {
-  throw new Error(`MarkdownSeoPage requires ABI marketing frontmatter (title, description, slug): ${id}`);
+  throw new Error(`MarkdownSeoPage requires content frontmatter (title, description, slug): ${id}`);
 }
 
 const slug = data.slug.endsWith('/') || data.slug === '/' ? data.slug : `${data.slug}/`;
@@ -55,10 +57,7 @@ const patchedEntry = {
 const { Content } = await render(patchedEntry);
 
 const pageFaqs = faqItemsFromMarkdown(entry.body);
-const productName =
-  slug === '/arena-breakout-infinite-cheats-pricing/'
-    ? 'Arena Breakout Infinite Cheats Plans'
-    : data.title.replace(/\s*\|.*$/, '').trim();
+const productName = data.title.replace(/\s*\|.*$/, '').trim();
 const productLd = productJsonLdForRoute(slug, productName, data.description, checkoutProduct);
 const jsonLd = [
   webPageSchema({ name: data.title, description: data.description, url: slug }),
@@ -67,6 +66,10 @@ const jsonLd = [
   ...(pageFaqs.length >= 2 ? [faqPageSchemaFromPairs(pageFaqs)] : []),
 ];
 const routeOg = ogImageForPath(slug);
+const showcaseFigures = (PAGE_SHOWCASE_SHOTS[slug] ?? []).map((shot) => ({
+  src: shot.src,
+  alt: shot.alt,
+}));
 ---
 
 <BaseLayout
@@ -86,13 +89,27 @@ const routeOg = ogImageForPath(slug);
         </div>
         <div class="mx-auto grid max-w-6xl items-start gap-10 px-5 lg:grid-cols-[1fr_minmax(18rem,22rem)]">
           <article class="content-markdown min-w-0 max-w-3xl">
+            {
+              showcaseFigures.length > 0 ? (
+                <section class="not-prose mb-8" data-reveal="up">
+                  <h2 class="mb-4 font-[family-name:var(--font-heading)] text-xl font-semibold text-foreground">
+                    Visual examples
+                  </h2>
+                  <div data-reveal="scale" data-lenis-prevent>
+                    <ContentFigures figures={showcaseFigures} />
+                  </div>
+                </section>
+              ) : null
+            }
             <Content />
-            {showAdditionalCosts ? <AdditionalCostsCallout class="not-prose mt-8" /> : null}
+            {showAdditionalCosts ? (
+              <AdditionalCostsCallout class="not-prose mt-8" pagePath={slug} />
+            ) : null}
             <div class="not-prose mt-8 lg:hidden">
               <CheckoutDirectPanel product={checkoutProduct} />
             </div>
           </article>
-          <div class="hidden lg:block">
+          <div class="hidden lg:block" data-reveal="right">
             <CheckoutDirectPanel product={checkoutProduct} />
           </div>
         </div>

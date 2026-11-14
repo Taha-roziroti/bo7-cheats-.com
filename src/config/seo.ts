@@ -1,7 +1,6 @@
 import { t } from '../i18n';
 import { SITE_DOMAIN as INDEXNOW_HOST_NAME } from './site';
 import { getPageSeoEntry } from './pageSeo';
-
 export const SITE_ORIGIN = `https://${t.site.domain}`;
 
 export const DEFAULT_OG_IMAGE = '/og/default.jpg';
@@ -10,7 +9,7 @@ export const DEFAULT_OG_IMAGE_HEIGHT = 630;
 
 export const GA_MEASUREMENT_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID as string | undefined;
 
-/** @example @dotacheats */
+/** @example @yoursite */
 export const TWITTER_SITE = import.meta.env.PUBLIC_TWITTER_SITE as string | undefined;
 
 export const TWITTER_CREATOR = import.meta.env.PUBLIC_TWITTER_CREATOR as string | undefined;

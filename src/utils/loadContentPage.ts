@@ -17,10 +17,12 @@ function pageMatchesId(page: { id: string; data: unknown }, id: string): boolean
   if (data.route && normalizeRoute(data.route) === normalizedId) return true;
 
   const stem = page.id.replace(/^\//, '').replace(/\/$/, '').replace(/\.md$/, '');
-  const wantStem = id.replace(/^\//, '').replace(/\/$/, '');
+  const wantStem = id.replace(/^\//, '').replace(/\/$/, '').replace(/\.md$/, '');
   if (stem === wantStem) return true;
+  if (wantStem.includes('/') && data.slug && normalizeRoute(data.slug) === normalizeRoute(id)) return true;
+  if (!wantStem.includes('/') && data.slug && normalizeRoute(data.slug).endsWith(`/${wantStem}/`)) return true;
 
-  if (id === 'home' && data.slug === '/') return true;
+  if ((id === 'home' || id === 'index') && data.slug === '/') return true;
 
   return false;
 }

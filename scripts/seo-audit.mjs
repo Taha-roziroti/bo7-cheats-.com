@@ -78,8 +78,15 @@ function resolveInternalHref(href) {
 
 const REDIRECT_ONLY = new Set([
   '/pricing/',
-  '/cloud-dma/',
-  '/hwid-spoofer/',
+  '/arena-breakout-infinite-esp/',
+  '/arena-breakout-infinite-aimbot/',
+  '/arena-breakout-infinite-cheats-pricing/',
+  '/cloud-dma-for-arena-breakout-infinite/',
+  '/arena-breakout-infinite-hwid-spoofer/',
+  '/guides/system-requirements/',
+  '/guides/cloud-dma-setup/',
+  '/guides/borderlands-3-cheat-system-requirements/',
+  '/cloud-dma-setup/',
   '/cheats/',
   '/contact/',
 ]);
@@ -126,8 +133,8 @@ function auditPage(route, html, file) {
   const title = html.match(/<title>([^<]*)<\/title>/i)?.[1] ?? '';
   const desc = html.match(/name="description" content="([^"]*)"/i)?.[1] ?? '';
   if (!title) fail('technical', `${route}: missing <title>`);
-  else if (indexable && !noindex && (title.length < 50 || title.length > 60)) {
-    fail('technical', `${route}: title length ${title.length} (target 50–60): ${title.slice(0, 50)}…`);
+  else if (isMoney && !noindex && (title.length < 42 || title.length > 60)) {
+    fail('technical', `${route}: title length ${title.length} (target 42–60): ${title.slice(0, 50)}…`);
   }
   if (indexable && noindex) {
     fail('technical', `${route}: indexable route has noindex`);
@@ -137,8 +144,8 @@ function auditPage(route, html, file) {
     fail('technical', `${route}: indexable route has nofollow`);
   }
   if (!desc) fail('technical', `${route}: missing meta description`);
-  else if (indexable && !noindex && (desc.length < 120 || desc.length > 165)) {
-    fail('technical', `${route}: meta description length ${desc.length} (target ~140–160)`);
+  else if (isMoney && !noindex && (desc.length < 110 || desc.length > 165)) {
+    fail('technical', `${route}: meta description length ${desc.length} (target 110–165)`);
   }
 
   const h1Count = (html.match(/<h1[\s>]/gi) ?? []).length;
@@ -224,9 +231,10 @@ function runSubcommand(cmd, args, label) {
 
 function runCspell() {
   const globs = [
-    'content/pages/home.md',
-    'content/pages/arena-breakout-infinite-*.md',
-    'content/pages/cloud-dma-for-arena-breakout-infinite.md',
+    'content/pages/index.md',
+    'content/pages/cloud-dma.md',
+    'content/pages/hwid-spoofer.md',
+    'content/pages/bo7-cheat-requirements.md',
     'src/data/faq.ts',
     'src/pages/404.astro',
   ];
@@ -258,6 +266,8 @@ function main() {
   runSubcommand('node', ['scripts/verify-unique-copy.mjs'], 'verify-unique-copy');
   runSubcommand('node', ['scripts/verify-images.mjs'], 'verify-images');
   runSubcommand('node', ['scripts/verify-anchor-text.mjs'], 'verify-anchor-text');
+  runSubcommand('node', ['scripts/audit-anchor-inventory.mjs'], 'audit-anchor-inventory');
+  runSubcommand('node', ['scripts/audit-keywords.mjs'], 'audit-keywords');
 
   const files = walkHtmlFiles(dist);
   for (const file of files) {

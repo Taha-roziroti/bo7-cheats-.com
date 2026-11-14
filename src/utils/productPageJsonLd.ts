@@ -8,14 +8,12 @@ import {
 } from '../data/productCatalog';
 export type CheckoutProductKind = 'main-product' | 'cloud-dma' | 'hwid-spoofer';
 import { PRODUCT_ID, SITE_URL } from '../data/site';
+import { SHOWCASE_BASE } from '../data/showcaseImages';
 import { productSchema } from './schema';
 
 const ROUTE_PRODUCT_IMAGE: Record<string, string> = {
-  '/arena-breakout-infinite-esp/': '/images/showcase/abi-grass-stealth.webp',
-  '/arena-breakout-infinite-aimbot/': '/images/showcase/abi-esp-indoor-aimbot.webp',
-  '/arena-breakout-infinite-cheats-pricing/': '/images/showcase/abi-esp-menu.webp',
-  '/cloud-dma-for-arena-breakout-infinite/': '/og/cloud-dma.jpg',
-  '/arena-breakout-infinite-hwid-spoofer/': '/og/default.jpg',
+  '/cloud-dma/': `${SHOWCASE_BASE}/bo7-esp-rooftop.webp`,
+  '/hwid-spoofer/': `${SHOWCASE_BASE}/bo7-esp-warehouse.webp`,
 };
 
 export function productJsonLdForRoute(
@@ -29,7 +27,7 @@ export function productJsonLdForRoute(
 
   if (checkout === 'cloud-dma') {
     return productSchema({
-      name: 'Cloud DMA for Arena Breakout Infinite',
+      name: 'Cloud DMA for Black Ops 7',
       description,
       url: route,
       offerUrl: CLOUD_DMA_CHECKOUT,
@@ -48,7 +46,7 @@ export function productJsonLdForRoute(
 
   if (checkout === 'hwid-spoofer') {
     return productSchema({
-      name: 'Arena Breakout Infinite HWID Spoofer',
+      name: 'Black Ops 7 HWID Spoofer',
       description,
       url: route,
       offerUrl: HWID_SPOOFER_CHECKOUT,
@@ -56,11 +54,8 @@ export function productJsonLdForRoute(
       image,
       productId: `${SITE_URL}${route}#product`,
       offers: [
-        {
-          name: hwidSpooferOffer.name,
-          priceUsd: hwidSpooferOffer.priceUsd,
-          url: HWID_SPOOFER_CHECKOUT,
-        },
+        { name: 'HWID Spoofer — Monthly', priceUsd: 50, url: HWID_SPOOFER_CHECKOUT },
+        { name: 'HWID Spoofer — Lifetime', priceUsd: 150, url: HWID_SPOOFER_CHECKOUT },
       ],
     });
   }
@@ -70,9 +65,13 @@ export function productJsonLdForRoute(
     description,
     url: route,
     offerUrl: MAIN_PRODUCT_CHECKOUT,
-    sku: route.replace(/\//g, '-').replace(/^-|-$/g, '') || 'main-product',
+    sku: 'main-product',
     image,
-    productId: route === '/' ? PRODUCT_ID : `${SITE_URL}${route}#product`,
-    offers: [...mainProductOffers],
+    productId: PRODUCT_ID,
+    offers: mainProductOffers.map((offer) => ({
+      name: offer.name,
+      priceUsd: offer.priceUsd,
+      url: offer.url,
+    })),
   });
 }

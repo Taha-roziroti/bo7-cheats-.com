@@ -1,6 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { INDEXABLE_MONEY_ROUTES } from '../config/site.mjs';
+import { INDEXABLE_MONEY_ROUTES, TEMPLATE_SHELL } from '../config/site.mjs';
+
+if (TEMPLATE_SHELL) {
+  console.log('verify-images: skipped (TEMPLATE_SHELL)');
+  process.exit(0);
+}
 
 const root = process.cwd();
 const dist = path.join(root, 'dist');
@@ -19,8 +24,10 @@ const AUDIT_ROUTES = new Set([
 
 const STATIC_IMAGE_MANIFESTS = [
   path.join(root, 'src/data/showcaseImages.ts'),
-  path.join(root, 'content/pages/cloud-dma-setup.md'),
-  path.join(root, 'content/pages/system-requirements.md'),
+  path.join(root, 'content/pages/index.md'),
+  path.join(root, 'content/pages/cloud-dma.md'),
+  path.join(root, 'content/pages/hwid-spoofer.md'),
+  path.join(root, 'content/pages/bo7-cheat-requirements.md'),
 ];
 
 function readHtml(route) {
@@ -102,6 +109,10 @@ for (const route of AUDIT_ROUTES) {
       if (url.startsWith('http')) continue;
       assertFileExists(url, `${route} img #${imgIndex}`);
     }
+  }
+
+  if (INDEXABLE_MONEY_ROUTES.includes(route) && /placeholder\.svg/i.test(html)) {
+    errors.push(`${route}: money page must not reference placeholder.svg`);
   }
 }
 

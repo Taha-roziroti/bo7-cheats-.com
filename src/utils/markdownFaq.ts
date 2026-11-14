@@ -3,7 +3,7 @@ export interface MarkdownFaqItem {
   a: string;
 }
 
-/** Parse `## Questions` blocks with `**Question?**` + answer lines from raw MD bodies. */
+/** Parse FAQ blocks after `## …question…` headings (`**Q?**` or `### Q?` + answers). */
 export function faqItemsFromMarkdown(body: string): MarkdownFaqItem[] {
   const lines = body.split(/\r?\n/);
   let inSection = false;
@@ -13,17 +13,18 @@ export function faqItemsFromMarkdown(body: string): MarkdownFaqItem[] {
     const line = lines[i] ?? '';
     const trimmed = line.trim();
 
-    if (/^##\s+Questions\b/i.test(trimmed)) {
+    if (/^##\s+.*\b(questions?|ask about)\b/i.test(trimmed)) {
       inSection = true;
       continue;
     }
-    if (inSection && /^##\s+/.test(trimmed)) break;
+    if (inSection && /^##\s+/.test(trimmed) && !/^###\s+/.test(trimmed)) break;
     if (!inSection) continue;
 
-    const match = trimmed.match(/^\*\*(.+?)\*\*\s*$/);
-    if (!match) continue;
+    const boldMatch = trimmed.match(/^\*\*(.+?)\*\*\s*$/);
+    const h3Match = trimmed.match(/^###\s+(.+)$/);
+    const q = (boldMatch?.[1] ?? h3Match?.[1])?.trim();
+    if (!q) continue;
 
-    const q = match[1].trim();
     const answerParts: string[] = [];
 
     for (let j = i + 1; j < lines.length; j++) {
@@ -35,7 +36,7 @@ export function faqItemsFromMarkdown(body: string): MarkdownFaqItem[] {
         }
         continue;
       }
-      if (/^\*\*.+\*\*/.test(next) || /^##\s+/.test(next)) {
+      if (/^\*\*.+\*\*/.test(next) || /^###\s+/.test(next) || /^##\s+/.test(next)) {
         i = j - 1;
         break;
       }

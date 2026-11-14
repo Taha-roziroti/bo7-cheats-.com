@@ -10,16 +10,16 @@ export const FEATURE_TOOL_DISCLAIMER =
 
 export const CLOUD_DMA_ADDITIONAL_SERVICES = [
   {
-    name: 'Service A',
-    summary: 'Placeholder — describe required add-on or third-party service.',
+    name: 'GREENWARD',
+    summary: 'Required activation and routing service purchased outside this site.',
   },
   {
-    name: 'Service B',
-    summary: 'Placeholder — pricing and purchase path for this component.',
+    name: 'Static Server',
+    summary: 'Dedicated server component with its own recurring or upfront fee.',
   },
   {
-    name: 'Service C',
-    summary: 'Placeholder — ongoing fees or setup notes not included in the base license.',
+    name: 'AWS',
+    summary: 'Cloud hosting resources billed separately from the $50 Cloud DMA license.',
   },
 ] as const;
 
@@ -33,7 +33,7 @@ export const mainProductOffers = [
 ] as const;
 
 export const cloudDmaOffer = {
-  name: 'Cloud DMA infrastructure license (lifetime)',
+  name: 'Cloud DMA for Black Ops 7 (lifetime)',
   priceUsd: 50,
   url: CLOUD_DMA_CHECKOUT,
 } as const;
@@ -45,33 +45,33 @@ export const hwidSpooferOffer = {
 } as const;
 
 export const mainProductFeatures = [
-  'Feature one — placeholder',
-  'Feature two — placeholder',
-  'Feature three — placeholder',
-  'Feature four — placeholder',
-  'Feature five — placeholder',
-  'Feature six — placeholder',
+  'Aimbot with smoothing, FOV, and target highlighting',
+  'ESP boxes, skeletons, names, and distance readouts',
+  'Triggerbot helpers and recoil control profiles',
+  '2D radar and stream-proof overlay modes',
+  'Optional speed adjustments where enabled in the build',
+  'Screenshots from verified Black Ops 7 PC sessions',
 ] as const;
 
 export const mainProductRequirements = [
-  'Client: placeholder platform / store',
-  'OS: placeholder operating system requirements',
-  'Hardware: placeholder RAM and GPU notes',
-  'Security: placeholder firmware / isolation settings',
-  'Infrastructure: placeholder environment prerequisites',
+  'Client: Call of Duty: Black Ops 7 on PC',
+  'OS: Windows 10/11 x64 with current updates',
+  'Hardware: Discrete GPU and 16 GB+ RAM recommended',
+  'Security: TPM, Secure Boot, and HVCI per compatibility guide',
+  'Infrastructure: Cloud DMA license only when DMA modules are required',
 ] as const;
 
 export const cloudDmaRequirements = [
-  'Windows 10 or Windows 11 64-bit with Hyper-V capable edition',
-  'CPU virtualization enabled in firmware and Windows',
-  'Minimum 8 GB RAM; 16 GB recommended for the Hyper-V guest',
-  'Stable wired or wireless internet connection',
-  'Secure Boot and Core Isolation settings compatible with Hyper-V setup',
+  'Single PC with Hyper-V and CPU virtualization enabled',
+  'Windows 10/11 build listed in the requirements guide',
+  'Separate GREENWARD, Static Server, and AWS accounts',
+  'Cloud DMA license ($50 lifetime listing) before activation',
+  'Main BO7 module bundle when DMA-dependent features are used',
 ] as const;
 
 export const monthlyPlanCopy = {
   priceUsd: 35,
-  durationLabel: `${MONTHLY_ACCESS_DAYS}-day access`,
+  durationLabel: '30-day access',
   renewal: 'Placeholder renewal terms — replace before launch.',
 } as const;
 

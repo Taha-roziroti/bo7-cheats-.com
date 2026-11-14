@@ -44,11 +44,17 @@ export function breadcrumbsForRoute(route: string): BreadcrumbItem[] {
       { name: 'Setup guide', path: '/guides/cloud-dma-setup/' },
     ];
   }
+  if (route === '/guides/bo7-cheat-requirements/') {
+    return [
+      { name: 'Home', path: '/' },
+      { name: 'Guides', path: '/guides/bo7-cheat-requirements/' },
+      { name: 'System requirements', path: '/guides/bo7-cheat-requirements/' },
+    ];
+  }
   if (route === '/guides/system-requirements/') {
     return [
       { name: 'Home', path: '/' },
-      { name: 'Plans', path: '/arena-breakout-infinite-cheats-pricing/' },
-      { name: 'System requirements', path: '/guides/system-requirements/' },
+      { name: 'System requirements', path: '/guides/bo7-cheat-requirements/' },
     ];
   }
   if (route === '/arena-breakout-infinite-esp/') {
@@ -157,13 +163,17 @@ export function jsonLdForContentPage(input: {
     );
   }
 
-  if (input.schemaTypes.includes('Article') && input.articlePublished) {
+  if (
+    (input.schemaTypes.includes('Article') || input.schemaTypes.includes('TechArticle')) &&
+    input.articlePublished
+  ) {
     blocks.push(
       guideArticleSchema({
         name: input.seoTitle,
         description: input.metaDescription,
         url: input.route,
         datePublished: input.articlePublished,
+        articleType: input.schemaTypes.includes('TechArticle') ? 'TechArticle' : 'Article',
       }),
     );
   }

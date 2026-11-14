@@ -1,13 +1,12 @@
 /** External checkout destinations (Zadeyo affiliate). */
-import { SITE_URL } from '../../config/site.mjs';
 
 export const CHECKOUT_URLS = {
-  mainProduct: 'https://zadeyo.com/go/TAHA?to=%2Fproducts%2Fthe-isle-novaxware',
+  mainProduct: 'https://zadeyo.com/go/TAHA?to=%2Fproducts%2Fblack-ops-7',
   cloudDma: 'https://zadeyo.com/go/TAHA?to=%2Fproducts%2Fcloud-dma',
   hwidSpoofer: 'https://zadeyo.com/go/TAHA?to=%2Fproducts%2Fhwid-spoofer',
-  dota2: `${SITE_URL}/`,
-  skinChanger: `${SITE_URL}/`,
-  ugc: `${SITE_URL}/`,
+  dota2: 'https://zadeyo.com/go/TAHA?to=%2Fproducts%2Fblack-ops-7',
+  skinChanger: 'https://zadeyo.com/go/TAHA?to=%2Fproducts%2Fblack-ops-7',
+  ugc: 'https://zadeyo.com/go/TAHA?to=%2Fproducts%2Fblack-ops-7',
 };
 
 /** Slugs served by `src/pages/go/[slug].astro` (instant client redirect — no edge 302). */

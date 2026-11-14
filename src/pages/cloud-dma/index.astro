@@ -1,3 +1,13 @@
 ---
-return Astro.redirect('/cloud-dma-for-arena-breakout-infinite/', 301);
+import MarkdownSeoPage from '../../components/content/MarkdownSeoPage.astro';
 ---
+
+<MarkdownSeoPage
+  id="cloud-dma"
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Cloud DMA', path: '/cloud-dma/' },
+  ]}
+  checkoutProduct="cloud-dma"
+  showAdditionalCosts={true}
+/>

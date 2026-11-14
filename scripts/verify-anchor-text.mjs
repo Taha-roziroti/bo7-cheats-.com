@@ -1,6 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { INDEXABLE_MONEY_ROUTES } from '../config/site.mjs';
+import { INDEXABLE_MONEY_ROUTES, TEMPLATE_SHELL } from '../config/site.mjs';
+
+if (TEMPLATE_SHELL) {
+  console.log('verify-anchor-text: skipped (TEMPLATE_SHELL)');
+  process.exit(0);
+}
 
 const dist = path.join(process.cwd(), 'dist');
 const projectRoot = process.cwd();

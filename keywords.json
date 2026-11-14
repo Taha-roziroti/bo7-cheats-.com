@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "source": "Derived from src/data/site.ts SEO_ROUTE_INTENTS and money-page frontmatter.",
+  "pages": [
+    {
+      "route": "/",
+      "primary": "Black Ops 7 cheats",
+      "secondaries": ["BO7 cheats", "ZADEYO"],
+      "intent": "commercial"
+    },
+    {
+      "route": "/cloud-dma/",
+      "primary": "Cloud DMA",
+      "secondaries": ["BO7", "DMA card", "firmware"],
+      "intent": "commercial",
+      "primaryDensityMax": 3,
+      "headingPrimaryMax": 8
+    },
+    {
+      "route": "/hwid-spoofer/",
+      "primary": "HWID spoofer",
+      "secondaries": ["Ricochet", "BattlEye"],
+      "intent": "commercial",
+      "primaryDensityMax": 2.5,
+      "headingPrimaryMax": 5
+    },
+    {
+      "route": "/guides/bo7-cheat-requirements/",
+      "primary": "Black Ops 7 cheat system requirements",
+      "secondaries": ["BO7 PC requirements", "Windows 11", "HVCI"],
+      "intent": "informational"
+    },
+    {
+      "route": "/faq/",
+      "primary": "BO7 support",
+      "secondaries": ["checkout", "Cloud DMA", "HWID spoofer"],
+      "intent": "informational"
+    },
+    {
+      "route": "/about/",
+      "primary": "BO7 Cheats",
+      "secondaries": ["Black Ops 7", "operator portal"],
+      "intent": "informational"
+    },
+    {
+      "route": "/support/",
+      "primary": "customer support",
+      "secondaries": ["BO7 Cheats", "contact"],
+      "intent": "informational"
+    },
+    {
+      "route": "/privacy/",
+      "primary": "privacy policy",
+      "secondaries": [],
+      "intent": "legal"
+    },
+    {
+      "route": "/terms/",
+      "primary": "terms of service",
+      "secondaries": [],
+      "intent": "legal"
+    }
+  ]
+}

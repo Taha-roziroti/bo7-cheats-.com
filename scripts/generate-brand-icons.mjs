@@ -4,9 +4,9 @@ import sharp from 'sharp';
 
 const root = process.cwd();
 const publicDir = path.join(root, 'public');
-const source = path.join(publicDir, 'brand', 'abi-logo-source.webp');
+const source = path.join(publicDir, 'brand', 'bo7-logo-source.png');
 
-/** Matches logo artwork (black field). */
+/** Matches BO7 logo artwork (black field). */
 const ICON_BG = { r: 0, g: 0, b: 0, alpha: 1 };
 
 if (!fs.existsSync(source)) {
@@ -30,11 +30,11 @@ await squarePng(32).toFile(path.join(publicDir, 'favicon.ico'));
 
 const png180 = await squarePng(180).toBuffer();
 const base64 = png180.toString('base64');
-const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="ABI Cheats">
+const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="BO7 Cheats">
   <image href="data:image/png;base64,${base64}" width="180" height="180"/>
 </svg>
 `;
 fs.writeFileSync(path.join(publicDir, 'favicon.svg'), faviconSvg, 'utf8');
 fs.writeFileSync(path.join(publicDir, 'logo.svg'), faviconSvg, 'utf8');
 
-console.log('Brand icons generated from public/brand/abi-logo-source.webp');
+console.log('Brand icons generated from public/brand/bo7-logo-source.png');

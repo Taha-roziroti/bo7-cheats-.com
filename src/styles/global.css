@@ -835,3 +835,15 @@ html:not(.dark) .deployment-cta-secondary:hover {
     animation: none !important;
   }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 200ms;
+    animation-timing-function: ease-out;
+  }
+}

@@ -216,10 +216,11 @@ export function guideArticleSchema(input: {
   url: string;
   datePublished: string;
   dateModified?: string;
+  articleType?: 'Article' | 'TechArticle';
 }) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': input.articleType ?? 'Article',
     headline: input.name,
     description: input.description,
     url: canonicalUrl(input.url),

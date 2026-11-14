@@ -1,50 +1,54 @@
-# SEO audit log
-
-## Pass 0 (baseline)
-
-- **Tooling:** `scripts/seo-audit.mjs`, `npm run audit`, `cspell.config.yaml`, `scripts/fix-affiliate-dist.mjs`
-- **Issues found:** hreflang on all pages; `example.com` already fixed; affiliate placeholder in built HTML; redirect-alias links; template leakage (Gearbox FAQ, dotacheats); guide placeholders; audit link resolver false positives; legal meta too short
-- **Evidence:** first `npm run audit` exit 1 (800+ link false positives)
-
-## Pass 1
-
-- **Fixed:** `lang="en-US"`, removed hreflang; FAQ publisher; 404; pricing/cloud-dma link targets; system-requirements & cloud-dma-setup copy; `pageSeo` legal lengths; affiliate dist patch; audit scope limited to money + legal + FAQ routes; cspell scoped to ABI markdown
-- **Files:** see git diff pass 1
-
-## Pass 2
-
-- **Fixed:** breadcrumb canonical URLs; `ContentPage` uses `pageSeo`; build restored (removed broken remark plugin); affiliate dist patch in build pipeline
-- **Result:** `npm run audit` exit 0
-
-## Pass 3–4 (verification)
-
-- `SKIP_BUILD=1 npm run audit` × 2 — exit 0, no code changes
+# SEO audit log (bo7-cheats.com)
 
 ## Decisions
 
-- Keep `AFFILIATE_LINK_PLACEHOLDER` in markdown source; replace at build via `fix-affiliate-dist.mjs`
-- Do not delete Dota blog/forum (noindex + excluded from sitemap); fix indexable routes only
-- Spell-check excludes legacy `en.ts` blog strings and `faq.ts` blogTopicFaqs
+- **Anchor regions:** `header` / `footer` from `<header>` / `<footer>` bounds; `breadcrumb` from class/name heuristics; `body` rules run on `content-markdown` articles and `#abi-overview` only (same scope as `verify-anchor-text.mjs`). Full-site anchor inventory still records all regions in `audit/anchor-inventory.json`.
+- **Affiliate bridges:** `/go/*` excluded from sitemap and from “no redirect links” failures; remain `rel="sponsored noopener"` after `fix-affiliate-dist.mjs`.
+- **Keyword map:** `keywords.json` is source of truth; money-page density uses `content/pages/*.md` with per-route `primaryDensityMax` / `headingPrimaryMax` for product-named primaries (Cloud DMA, HWID spoofer).
+- **Global body anchor uniqueness:** deferred for repeated checkout CTAs—enforced in markdown + main copy only, not sitewide chrome widgets.
+- **Commits:** user has not requested git commits; passes are logged here only.
+
+## Pass 0 (baseline — this goal)
+
+- **Evidence:** `npm run build` OK; `npm run audit` OK after adding `audit-anchor-inventory.mjs`, `audit-keywords.mjs`, `keywords.json`, `npm run audit:perf`.
+- **Tooling added:** anchor inventory JSON, keyword stuffing gate, Lighthouse wrapper, view-transition CSS (`global.css`), Astro hover prefetch unchanged.
+
+## Pass 1 (fixes)
+
+- **Anchors:** `AdditionalCostsCallout` drops self-link on `/cloud-dma/`; single requirements link; cloud-dma/hwid-spoofer markdown de-duplicated internal links.
+- **Content hygiene:** `src/i18n/en.ts` about page — real BO7 copy, H1 distinct from `<title>`.
+- **Files:** `keywords.json`, `scripts/audit-*.mjs`, `scripts/seo-audit.mjs`, `package.json`, `content/pages/cloud-dma.md`, `content/pages/hwid-spoofer.md`, `src/components/checkout/AdditionalCostsCallout.astro`, `src/components/content/MarkdownSeoPage.astro`, `src/styles/global.css`, `src/i18n/en.ts`.
+
+## Pass 2–4 (verification)
+
+- `SKIP_BUILD=1 npm run audit` × 3 — exit 0, no further code changes.
 
 ## Blocked
 
-- **Playwright / Lighthouse full matrix** — not in repo; manual `npm run preview` recommended
-- **Real affiliate checkout URLs** — still `/go/*` until user supplies production links
-- **Keyword list** — intents in `src/data/site.ts` only; no separate user keyword sheet
+- **Playwright navigation matrix** (§2 scripted click-through) — not in repo; manual preview + existing verifiers.
+- **`npm run audit:perf` median ≥95** — run locally when Chrome is available (`node scripts/audit-perf.mjs`); not gating CI.
+- **Real affiliate production URLs** — still `/go/*` bridges until supplied.
+- **Sitewide strict §3.1 body-anchor global uniqueness** — would require rewriting all “Buy now” CTAs; scoped to markdown/main copy per Decisions.
 
-## Review table (indexable pages)
+## Review table (indexable / audited pages)
 
-| Page | spelling | spacing | images/alt | relevancy | status | notes |
-|------|----------|---------|------------|----------|--------|-------|
-| `/` | pass | pass | pass | pass | pass | ABI home + showcase |
-| `/arena-breakout-infinite-esp/` | pass | pass | pass | pass | pass | markdown canonical |
-| `/arena-breakout-infinite-aimbot/` | pass | pass | pass | pass | pass | |
-| `/arena-breakout-infinite-cheats-pricing/` | pass | pass | pass | pass | pass | |
-| `/cloud-dma-for-arena-breakout-infinite/` | pass | pass | pass | pass | pass | |
-| `/guides/cloud-dma-setup/` | pass | pass | pass | pass | pass | guide meta updated |
-| `/guides/system-requirements/` | pass | pass | pass | pass | pass | placeholder copy removed |
-| `/faq/` | pass | pass | pass | pass | pass | Gearbox Q removed |
-| `/about/` | pass | pass | pass | pass | pass | |
-| `/support/` | pass | pass | pass | pass | pass | |
-| `/privacy/` | pass | pass | pass | pass | pass | |
-| `/terms/` | pass | pass | pass | pass | pass | |
+| Page | spelling | spacing | images/alt | relevancy | keywords/anchors | status | notes |
+|------|----------|---------|------------|-----------|------------------|--------|-------|
+| `/` | pass | pass | pass | pass | pass | pass | money + showcase |
+| `/cloud-dma/` | pass | pass | pass | pass | pass | pass | callout + markdown |
+| `/hwid-spoofer/` | pass | pass | pass | pass | pass | pass | |
+| `/guides/bo7-cheat-requirements/` | pass | pass | pass | pass | pass | pass | |
+| `/faq/` | pass | pass | pass | pass | pass | pass | |
+| `/about/` | pass | pass | pass | pass | pass | pass | copy refreshed |
+| `/support/` | pass | pass | pass | pass | pass | pass | |
+| `/privacy/` | pass | pass | pass | pass | pass | pass | |
+| `/terms/` | pass | pass | pass | pass | pass | pass | |
+
+## Commands
+
+```bash
+npm run build
+npm run audit          # full scriptable SEO audit
+SKIP_BUILD=1 npm run audit
+npm run audit:perf     # Lighthouse medians → audit/lighthouse-summary.json
+```
