@@ -9,45 +9,49 @@ export interface PageSeoEntry {
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
-    title: 'Black Ops 7 Cheats for PC | Aimbot & ESP',
+    title: 'Black Ops 7 PC Cheats | Aimbot, ESP & Radar Tools',
     description:
-      'Explore Black Ops 7 cheats with aimbot, ESP, radar and recoil controls. Check features, PC requirements and available plans.',
+      'Explore Black Ops 7 cheats with aimbot, ESP, radar and recoil controls on PC. Review live screenshots, requirements, and monthly or lifetime plans.',
   },
   '/cloud-dma/': {
     title: 'Cloud DMA for Black Ops 7 | Setup & Requirements',
     description:
-      'See how Cloud DMA for Black Ops 7 works, including its single-PC Hyper-V setup, required components and Windows requirements.',
+      'See how Cloud DMA for Black Ops 7 works on a single-PC Hyper-V split, which third-party services you must buy, and the Windows checks before checkout.',
   },
   '/hwid-spoofer/': {
-    title: 'Black Ops 7 HWID Spoofer | PC Product Details',
+    title: 'Black Ops 7 HWID Spoofer | Ricochet & PC Utility',
     description:
-      'Explore the Black Ops 7 HWID spoofer, listed Ricochet compatibility, Windows requirements and available subscription options.',
+      'Review the Black Ops 7 HWID spoofer listing, Ricochet compatibility notes, Windows administrator requirements, and monthly or lifetime checkout options.',
   },
   '/guides/bo7-cheat-requirements/': {
-    title: 'Black Ops 7 Cheat System Requirements | PC Guide',
+    title: 'Black Ops 7 Cheat Requirements | Full Windows Guide',
     description:
-      'Check Windows, TPM, Secure Boot, HVCI and virtualization requirements for the BO7 setup before choosing a product.',
+      'Check Windows 10 and 11, TPM, Secure Boot, HVCI, virtualization, and RAM requirements for BO7 cheats, Cloud DMA, and the HWID utility before you purchase.',
   },
   '/faq/': {
-    title: 'BO7 Cheats FAQ | Support answers',
+    title: 'Black Ops 7 Cheats FAQ | Plans, Setup & Support',
     description:
-      'Frequently asked questions about Black Ops 7 cheat delivery, compatibility, Cloud DMA, and HWID utilities on PC.',
+      'Get answers on BO7 cheat delivery, module toggles, ban risk, Windows builds, Cloud DMA billing, HWID utilities, and what to send support before checkout.',
   },
   '/support/': {
-    title: 'BO7 Cheats Support | Contact',
-    description: 'Contact BO7 Cheats support with order details, Windows build, and setup context for faster help.',
+    title: 'BO7 Cheats Support Desk | Orders, Setup & Billing',
+    description:
+      'Contact BO7 Cheats support with your order email, Windows build, product purchased, and loader or Hyper-V errors so we can reply with accurate setup steps.',
   },
   '/about/': {
-    title: 'About BO7 Cheats',
-    description: 'Independent information site for Black Ops 7 PC software, compatibility guides, and product checkout links.',
+    title: 'About BO7 Cheats Publisher | Black Ops 7 PC Guides',
+    description:
+      'Learn how bo7-cheats.com documents Black Ops 7 PC software with screenshots, compatibility guides, and affiliate checkout bridges for buyers.',
   },
   '/privacy/': {
-    title: 'BO7 Cheats Privacy Policy',
-    description: 'How bo7-cheats.com handles analytics, cookies, and affiliate checkout referrals.',
+    title: 'BO7 Cheats Privacy Policy | Cookies, Analytics & Data',
+    description:
+      'How bo7-cheats.com uses analytics cookies, measures traffic, and handles affiliate checkout referrals to third-party operators and privacy contacts.',
   },
   '/terms/': {
-    title: 'BO7 Cheats Terms & Conditions',
-    description: 'Terms governing use of bo7-cheats.com content and third-party product checkout links.',
+    title: 'BO7 Cheats Terms of Service | Site & Checkout Rules',
+    description:
+      'Terms for bo7-cheats.com content, affiliate checkout links, operator refunds, and your responsibilities under game publisher and local law.',
   },
 };
 

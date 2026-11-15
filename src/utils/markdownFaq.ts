@@ -20,12 +20,14 @@ export function faqItemsFromMarkdown(body: string): MarkdownFaqItem[] {
     if (inSection && /^##\s+/.test(trimmed) && !/^###\s+/.test(trimmed)) break;
     if (!inSection) continue;
 
+    const listMatch = trimmed.match(/^[-*]\s+\*\*(.+?)\*\*\s+(.+)$/);
     const boldMatch = trimmed.match(/^\*\*(.+?)\*\*\s*$/);
     const h3Match = trimmed.match(/^###\s+(.+)$/);
-    const q = (boldMatch?.[1] ?? h3Match?.[1])?.trim();
+    const inlineQ = listMatch?.[1]?.trim();
+    const q = inlineQ ?? (boldMatch?.[1] ?? h3Match?.[1])?.trim();
     if (!q) continue;
 
-    const answerParts: string[] = [];
+    const answerParts: string[] = listMatch?.[2] ? [listMatch[2]] : [];
 
     for (let j = i + 1; j < lines.length; j++) {
       const next = (lines[j] ?? '').trim();
@@ -36,7 +38,12 @@ export function faqItemsFromMarkdown(body: string): MarkdownFaqItem[] {
         }
         continue;
       }
-      if (/^\*\*.+\*\*/.test(next) || /^###\s+/.test(next) || /^##\s+/.test(next)) {
+      if (
+        /^[-*]\s+\*\*.+\*\*/.test(next) ||
+        /^\*\*.+\*\*/.test(next) ||
+        /^###\s+/.test(next) ||
+        /^##\s+/.test(next)
+      ) {
         i = j - 1;
         break;
       }

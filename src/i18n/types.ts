@@ -97,6 +97,8 @@ export interface WhyMetric {
 export interface Translations {
   site: SiteConfig;
   nav: NavLink[];
+  /** Distinct visible labels for the mobile sheet (avoids duplicate anchor text with desktop nav). */
+  navMobile: NavLink[];
   hero: {
     status: string;
     eyebrow: string;

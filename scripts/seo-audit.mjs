@@ -133,8 +133,8 @@ function auditPage(route, html, file) {
   const title = html.match(/<title>([^<]*)<\/title>/i)?.[1] ?? '';
   const desc = html.match(/name="description" content="([^"]*)"/i)?.[1] ?? '';
   if (!title) fail('technical', `${route}: missing <title>`);
-  else if (isMoney && !noindex && (title.length < 42 || title.length > 60)) {
-    fail('technical', `${route}: title length ${title.length} (target 42–60): ${title.slice(0, 50)}…`);
+  else if (indexable && !noindex && (title.length < 50 || title.length > 60)) {
+    fail('technical', `${route}: title length ${title.length} (target 50–60): ${title.slice(0, 50)}…`);
   }
   if (indexable && noindex) {
     fail('technical', `${route}: indexable route has noindex`);
@@ -144,8 +144,12 @@ function auditPage(route, html, file) {
     fail('technical', `${route}: indexable route has nofollow`);
   }
   if (!desc) fail('technical', `${route}: missing meta description`);
-  else if (isMoney && !noindex && (desc.length < 110 || desc.length > 165)) {
-    fail('technical', `${route}: meta description length ${desc.length} (target 110–165)`);
+  else if (indexable && !noindex && (desc.length < 120 || desc.length > 155)) {
+    fail('technical', `${route}: meta description length ${desc.length} (target 120–155)`);
+  }
+
+  if (indexable && !noindex && !html.includes('@media')) {
+    fail('technical', `${route}: missing responsive @media rules in document`);
   }
 
   const h1Count = (html.match(/<h1[\s>]/gi) ?? []).length;

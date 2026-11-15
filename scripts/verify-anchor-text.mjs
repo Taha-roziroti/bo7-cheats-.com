@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { INDEXABLE_MONEY_ROUTES, TEMPLATE_SHELL } from '../config/site.mjs';
+import { contentBodyHtml } from './lib/contentBodyHtml.mjs';
 
 if (TEMPLATE_SHELL) {
   console.log('verify-anchor-text: skipped (TEMPLATE_SHELL)');
@@ -17,14 +18,12 @@ const AUDIT_ROUTES = new Set([
   '/support/',
   '/privacy/',
   '/terms/',
+  '/faq/',
 ]);
 
 /** Skip global chrome: nav, footer, checkout widgets repeat labels by design. */
 function contentHtml(html) {
-  const article = html.match(/<article[^>]*class="[^"]*content-markdown[\s\S]*?<\/article>/i)?.[0];
-  if (article) return article;
-  const overview = html.match(/id="abi-overview"[\s\S]*?<\/section>/i)?.[0];
-  return overview ?? '';
+  return contentBodyHtml(html);
 }
 
 function normalizeHref(href) {
@@ -134,6 +133,9 @@ for (const file of fs.readdirSync(mdDir).filter((f) => f.endsWith('.md'))) {
     const hrefs = new Set(hits.map((h) => h.href));
     if (hrefs.size > 1) {
       errors.push(`content/pages/${file}: "${hits[0].text}" → ${[...hrefs].join(' and ')}`);
+    }
+    if (hits.length > 1 && hrefs.size === 1) {
+      errors.push(`content/pages/${file}: repeated anchor "${hits[0].text}" (${hits.length}×)`);
     }
   }
 }

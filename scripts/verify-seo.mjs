@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { SITE_HOST, SITE_URL, INDEXABLE_MONEY_ROUTES, TEMPLATE_SHELL } from '../config/site.mjs';
+import { SITE_URL, TEMPLATE_SHELL } from '../config/site.mjs';
+import { contentBodyHtml } from './lib/contentBodyHtml.mjs';
 
 if (TEMPLATE_SHELL) {
   console.log('verify-seo: skipped (TEMPLATE_SHELL)');
@@ -10,27 +11,44 @@ if (TEMPLATE_SHELL) {
 const dist = path.join(process.cwd(), 'dist');
 const errors = [];
 
-function readHtml(relativePath) {
-  const file = path.join(dist, relativePath === '/' ? 'index.html' : `${relativePath}index.html`);
+/** Same indexable set as seo-audit HTML crawl. */
+const INDEXABLE_ROUTES = [
+  '/',
+  '/cloud-dma/',
+  '/hwid-spoofer/',
+  '/guides/bo7-cheat-requirements/',
+  '/faq/',
+  '/about/',
+  '/support/',
+  '/privacy/',
+  '/terms/',
+];
+
+const MONEY_ROUTES = new Set([
+  '/',
+  '/cloud-dma/',
+  '/hwid-spoofer/',
+  '/guides/bo7-cheat-requirements/',
+]);
+
+const TITLE_MIN = 50;
+const TITLE_MAX = 60;
+const DESC_MIN = 120;
+const DESC_MAX = 155;
+const MIN_BODY_WORDS = 400;
+
+function readHtml(route) {
+  const file = path.join(dist, route === '/' ? 'index.html' : `${route.slice(1)}index.html`);
   if (!fs.existsSync(file)) {
-    errors.push(`Missing built page: ${relativePath}`);
+    errors.push(`Missing built page: ${route}`);
     return null;
   }
   return fs.readFileSync(file, 'utf8');
 }
 
-const TITLE_MIN = 42;
-const TITLE_MAX = 60;
-const DESC_MIN = 110;
-const DESC_MAX = 165;
-const MIN_ARTICLE_WORDS = 400;
-const WORD_COUNT_SKIP = new Set(['/', '/faq/']);
-
-function articleWordCount(html) {
-  const chunk =
-    html.match(/<article[^>]*class="[^"]*content-markdown[\s\S]*?<\/article>/i)?.[0] ??
-    html.match(/<article[\s\S]*?<\/article>/i)?.[0] ??
-    '';
+function bodyWordCount(html) {
+  const chunk = contentBodyHtml(html);
+  if (!chunk) return 0;
   const text = chunk.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
   if (!text) return 0;
   return text.split(/\s+/).filter(Boolean).length;
@@ -64,11 +82,13 @@ function checkPage(route) {
     }
   }
 
-  if (!WORD_COUNT_SKIP.has(route)) {
-    const words = articleWordCount(html);
-    if (words < MIN_ARTICLE_WORDS) {
-      errors.push(`${route}: article body ~${words} words (minimum ${MIN_ARTICLE_WORDS})`);
-    }
+  const words = bodyWordCount(html);
+  if (words < MIN_BODY_WORDS) {
+    errors.push(`${route}: main copy ~${words} words (minimum ${MIN_BODY_WORDS})`);
+  }
+
+  if (!html.includes('@media')) {
+    errors.push(`${route}: missing responsive @media rules in document`);
   }
 
   const canonical = `${SITE_URL}${route === '/' ? '/' : route}`;
@@ -101,9 +121,8 @@ function checkPage(route) {
   }
 
   const h1Count = (html.match(/<h1[\s>]/gi) ?? []).length;
-  const h1Expected = 1;
-  if (h1Count !== h1Expected) {
-    errors.push(`${route}: expected ${h1Expected} h1 tag(s), found ${h1Count}`);
+  if (h1Count !== 1) {
+    errors.push(`${route}: expected 1 h1 tag(s), found ${h1Count}`);
   }
 
   const titleMatch = html.match(/<title>([^<]*)<\/title>/i);
@@ -128,7 +147,7 @@ function checkPage(route) {
   const requiresProduct =
     route !== '/faq/' &&
     !route.startsWith('/guides/') &&
-    INDEXABLE_MONEY_ROUTES.includes(route);
+    MONEY_ROUTES.has(route);
   if (
     requiresProduct &&
     !html.includes('"@type":"Product"') &&
@@ -149,7 +168,7 @@ function checkPage(route) {
 
 const titles = new Map();
 
-for (const route of INDEXABLE_MONEY_ROUTES) {
+for (const route of INDEXABLE_ROUTES) {
   checkPage(route);
   const html = readHtml(route);
   if (!html) continue;
@@ -190,4 +209,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`verify-seo: OK (${INDEXABLE_MONEY_ROUTES.length} money pages + sitemap/robots)`);
+console.log(`verify-seo: OK (${INDEXABLE_ROUTES.length} indexable routes + sitemap/robots)`);

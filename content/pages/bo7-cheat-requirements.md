@@ -1,6 +1,6 @@
 ---
-title: "Black Ops 7 Cheat System Requirements | PC Guide"
-description: "Check Windows, TPM, Secure Boot, HVCI and virtualization requirements for the BO7 setup before choosing a product."
+title: "Black Ops 7 Cheat Requirements | Full Windows Guide"
+description: "Check Windows 10 and 11, TPM, Secure Boot, HVCI, virtualization, and RAM requirements for BO7 cheats, Cloud DMA, and the HWID utility before you purchase."
 slug: "/guides/bo7-cheat-requirements/"
 ---
 

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14T18:33:00.370Z",
+  "generated": "2026-11-15T03:21:32.722Z",
   "anchors": [
     {
       "page": "/about/",
@@ -76,8 +76,8 @@
     {
       "page": "/about/",
       "region": "header",
-      "text": "Features mobile menu",
-      "normalized": "features mobile menu",
+      "text": "Module features mobile menu",
+      "normalized": "module features mobile menu",
       "href": "/#features",
       "normalizedHref": "/",
       "rel": ""
@@ -85,8 +85,8 @@
     {
       "page": "/about/",
       "region": "header",
-      "text": "Plans mobile menu",
-      "normalized": "plans mobile menu",
+      "text": "Pricing plans mobile menu",
+      "normalized": "pricing plans mobile menu",
       "href": "/#products",
       "normalizedHref": "/",
       "rel": ""
@@ -94,8 +94,8 @@
     {
       "page": "/about/",
       "region": "header",
-      "text": "Cloud DMA mobile menu",
-      "normalized": "cloud dma mobile menu",
+      "text": "Hyper-V Cloud DMA mobile menu",
+      "normalized": "hyper-v cloud dma mobile menu",
       "href": "/cloud-dma/",
       "normalizedHref": "/cloud-dma/",
       "rel": ""
@@ -103,8 +103,8 @@
     {
       "page": "/about/",
       "region": "header",
-      "text": "HWID Spoofer mobile menu",
-      "normalized": "hwid spoofer mobile menu",
+      "text": "HWID utility mobile menu",
+      "normalized": "hwid utility mobile menu",
       "href": "/hwid-spoofer/",
       "normalizedHref": "/hwid-spoofer/",
       "rel": ""
@@ -112,8 +112,8 @@
     {
       "page": "/about/",
       "region": "header",
-      "text": "Requirements mobile menu",
-      "normalized": "requirements mobile menu",
+      "text": "PC compatibility mobile menu",
+      "normalized": "pc compatibility mobile menu",
       "href": "/guides/bo7-cheat-requirements/",
       "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
@@ -121,8 +121,8 @@
     {
       "page": "/about/",
       "region": "header",
-      "text": "FAQ mobile menu",
-      "normalized": "faq mobile menu",
+      "text": "Pre-purchase FAQ mobile menu",
+      "normalized": "pre-purchase faq mobile menu",
       "href": "/faq/",
       "normalizedHref": "/faq/",
       "rel": ""
@@ -130,8 +130,8 @@
     {
       "page": "/about/",
       "region": "header",
-      "text": "Support mobile menu",
-      "normalized": "support mobile menu",
+      "text": "Help desk mobile menu",
+      "normalized": "help desk mobile menu",
       "href": "/support/",
       "normalizedHref": "/support/",
       "rel": ""
@@ -150,8 +150,8 @@
       "region": "body",
       "text": "Share on X",
       "normalized": "share on x",
-      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;text=About%20BO7%20Cheats",
-      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;text=About%20BO7%20Cheats",
+      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;text=About%20BO7%20Cheats%20Publisher%20%7C%20Black%20Ops%207%20PC%20Guides",
+      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;text=About%20BO7%20Cheats%20Publisher%20%7C%20Black%20Ops%207%20PC%20Guides",
       "rel": "noopener noreferrer"
     },
     {
@@ -168,8 +168,8 @@
       "region": "body",
       "text": "Share on Telegram",
       "normalized": "share on telegram",
-      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;text=About%20BO7%20Cheats",
-      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;text=About%20BO7%20Cheats",
+      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;text=About%20BO7%20Cheats%20Publisher%20%7C%20Black%20Ops%207%20PC%20Guides",
+      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;text=About%20BO7%20Cheats%20Publisher%20%7C%20Black%20Ops%207%20PC%20Guides",
       "rel": "noopener noreferrer"
     },
     {
@@ -177,8 +177,8 @@
       "region": "body",
       "text": "Share on Reddit",
       "normalized": "share on reddit",
-      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;title=About%20BO7%20Cheats",
-      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;title=About%20BO7%20Cheats",
+      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;title=About%20BO7%20Cheats%20Publisher%20%7C%20Black%20Ops%207%20PC%20Guides",
+      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fabout%2F&amp;title=About%20BO7%20Cheats%20Publisher%20%7C%20Black%20Ops%207%20PC%20Guides",
       "rel": "noopener noreferrer"
     },
     {
@@ -186,8 +186,8 @@
       "region": "body",
       "text": "Share on WhatsApp",
       "normalized": "share on whatsapp",
-      "href": "https://wa.me/?text=About%20BO7%20Cheats%20https%3A%2F%2Fbo7-cheats.com%2Fabout%2F",
-      "normalizedHref": "https://wa.me/?text=About%20BO7%20Cheats%20https%3A%2F%2Fbo7-cheats.com%2Fabout%2F",
+      "href": "https://wa.me/?text=About%20BO7%20Cheats%20Publisher%20%7C%20Black%20Ops%207%20PC%20Guides%20https%3A%2F%2Fbo7-cheats.com%2Fabout%2F",
+      "normalizedHref": "https://wa.me/?text=About%20BO7%20Cheats%20Publisher%20%7C%20Black%20Ops%207%20PC%20Guides%20https%3A%2F%2Fbo7-cheats.com%2Fabout%2F",
       "rel": "noopener noreferrer"
     },
     {
@@ -265,10 +265,10 @@
     {
       "page": "/about/",
       "region": "footer",
-      "text": "Cloud DMA",
-      "normalized": "cloud dma",
-      "href": "/cloud-dma/",
-      "normalizedHref": "/cloud-dma/",
+      "text": "HWID Spoofer utility",
+      "normalized": "hwid spoofer utility",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
       "rel": ""
     },
     {
@@ -391,8 +391,8 @@
     {
       "page": "/cloud-dma/",
       "region": "header",
-      "text": "Features mobile menu",
-      "normalized": "features mobile menu",
+      "text": "Module features mobile menu",
+      "normalized": "module features mobile menu",
       "href": "/#features",
       "normalizedHref": "/",
       "rel": ""
@@ -400,8 +400,8 @@
     {
       "page": "/cloud-dma/",
       "region": "header",
-      "text": "Plans mobile menu",
-      "normalized": "plans mobile menu",
+      "text": "Pricing plans mobile menu",
+      "normalized": "pricing plans mobile menu",
       "href": "/#products",
       "normalizedHref": "/",
       "rel": ""
@@ -409,8 +409,8 @@
     {
       "page": "/cloud-dma/",
       "region": "header",
-      "text": "Cloud DMA mobile menu",
-      "normalized": "cloud dma mobile menu",
+      "text": "Hyper-V Cloud DMA mobile menu",
+      "normalized": "hyper-v cloud dma mobile menu",
       "href": "/cloud-dma/",
       "normalizedHref": "/cloud-dma/",
       "rel": ""
@@ -418,8 +418,8 @@
     {
       "page": "/cloud-dma/",
       "region": "header",
-      "text": "HWID Spoofer mobile menu",
-      "normalized": "hwid spoofer mobile menu",
+      "text": "HWID utility mobile menu",
+      "normalized": "hwid utility mobile menu",
       "href": "/hwid-spoofer/",
       "normalizedHref": "/hwid-spoofer/",
       "rel": ""
@@ -427,8 +427,8 @@
     {
       "page": "/cloud-dma/",
       "region": "header",
-      "text": "Requirements mobile menu",
-      "normalized": "requirements mobile menu",
+      "text": "PC compatibility mobile menu",
+      "normalized": "pc compatibility mobile menu",
       "href": "/guides/bo7-cheat-requirements/",
       "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
@@ -436,8 +436,8 @@
     {
       "page": "/cloud-dma/",
       "region": "header",
-      "text": "FAQ mobile menu",
-      "normalized": "faq mobile menu",
+      "text": "Pre-purchase FAQ mobile menu",
+      "normalized": "pre-purchase faq mobile menu",
       "href": "/faq/",
       "normalizedHref": "/faq/",
       "rel": ""
@@ -445,8 +445,8 @@
     {
       "page": "/cloud-dma/",
       "region": "header",
-      "text": "Support mobile menu",
-      "normalized": "support mobile menu",
+      "text": "Help desk mobile menu",
+      "normalized": "help desk mobile menu",
       "href": "/support/",
       "normalizedHref": "/support/",
       "rel": ""
@@ -625,10 +625,10 @@
     {
       "page": "/cloud-dma/",
       "region": "footer",
-      "text": "Cloud DMA",
-      "normalized": "cloud dma",
-      "href": "/cloud-dma/",
-      "normalizedHref": "/cloud-dma/",
+      "text": "HWID Spoofer utility",
+      "normalized": "hwid spoofer utility",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
       "rel": ""
     },
     {
@@ -751,8 +751,8 @@
     {
       "page": "/faq/",
       "region": "header",
-      "text": "Features mobile menu",
-      "normalized": "features mobile menu",
+      "text": "Module features mobile menu",
+      "normalized": "module features mobile menu",
       "href": "/#features",
       "normalizedHref": "/",
       "rel": ""
@@ -760,8 +760,8 @@
     {
       "page": "/faq/",
       "region": "header",
-      "text": "Plans mobile menu",
-      "normalized": "plans mobile menu",
+      "text": "Pricing plans mobile menu",
+      "normalized": "pricing plans mobile menu",
       "href": "/#products",
       "normalizedHref": "/",
       "rel": ""
@@ -769,8 +769,8 @@
     {
       "page": "/faq/",
       "region": "header",
-      "text": "Cloud DMA mobile menu",
-      "normalized": "cloud dma mobile menu",
+      "text": "Hyper-V Cloud DMA mobile menu",
+      "normalized": "hyper-v cloud dma mobile menu",
       "href": "/cloud-dma/",
       "normalizedHref": "/cloud-dma/",
       "rel": ""
@@ -778,8 +778,8 @@
     {
       "page": "/faq/",
       "region": "header",
-      "text": "HWID Spoofer mobile menu",
-      "normalized": "hwid spoofer mobile menu",
+      "text": "HWID utility mobile menu",
+      "normalized": "hwid utility mobile menu",
       "href": "/hwid-spoofer/",
       "normalizedHref": "/hwid-spoofer/",
       "rel": ""
@@ -787,8 +787,8 @@
     {
       "page": "/faq/",
       "region": "header",
-      "text": "Requirements mobile menu",
-      "normalized": "requirements mobile menu",
+      "text": "PC compatibility mobile menu",
+      "normalized": "pc compatibility mobile menu",
       "href": "/guides/bo7-cheat-requirements/",
       "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
@@ -796,8 +796,8 @@
     {
       "page": "/faq/",
       "region": "header",
-      "text": "FAQ mobile menu",
-      "normalized": "faq mobile menu",
+      "text": "Pre-purchase FAQ mobile menu",
+      "normalized": "pre-purchase faq mobile menu",
       "href": "/faq/",
       "normalizedHref": "/faq/",
       "rel": ""
@@ -805,8 +805,8 @@
     {
       "page": "/faq/",
       "region": "header",
-      "text": "Support mobile menu",
-      "normalized": "support mobile menu",
+      "text": "Help desk mobile menu",
+      "normalized": "help desk mobile menu",
       "href": "/support/",
       "normalizedHref": "/support/",
       "rel": ""
@@ -823,8 +823,17 @@
     {
       "page": "/faq/",
       "region": "body",
-      "text": "BO7 PC compatibility requirements",
-      "normalized": "bo7 pc compatibility requirements",
+      "text": "main product checkout",
+      "normalized": "main product checkout",
+      "href": "/go/",
+      "normalizedHref": null,
+      "rel": ""
+    },
+    {
+      "page": "/faq/",
+      "region": "body",
+      "text": "BO7 system requirements guide",
+      "normalized": "bo7 system requirements guide",
       "href": "/guides/bo7-cheat-requirements/",
       "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
@@ -832,10 +841,28 @@
     {
       "page": "/faq/",
       "region": "body",
-      "text": "checkout placeholder",
-      "normalized": "checkout placeholder",
-      "href": "/go/",
-      "normalizedHref": null,
+      "text": "Cloud DMA overview",
+      "normalized": "cloud dma overview",
+      "href": "/cloud-dma/",
+      "normalizedHref": "/cloud-dma/",
+      "rel": ""
+    },
+    {
+      "page": "/faq/",
+      "region": "body",
+      "text": "HWID Spoofer page",
+      "normalized": "hwid spoofer page",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
+      "rel": ""
+    },
+    {
+      "page": "/faq/",
+      "region": "body",
+      "text": "PC compatibility checklist",
+      "normalized": "pc compatibility checklist",
+      "href": "/guides/bo7-cheat-requirements/",
+      "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
     },
     {
@@ -913,10 +940,10 @@
     {
       "page": "/faq/",
       "region": "footer",
-      "text": "Cloud DMA",
-      "normalized": "cloud dma",
-      "href": "/cloud-dma/",
-      "normalizedHref": "/cloud-dma/",
+      "text": "HWID Spoofer utility",
+      "normalized": "hwid spoofer utility",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
       "rel": ""
     },
     {
@@ -1039,8 +1066,8 @@
     {
       "page": "/guides/bo7-cheat-requirements/",
       "region": "header",
-      "text": "Features mobile menu",
-      "normalized": "features mobile menu",
+      "text": "Module features mobile menu",
+      "normalized": "module features mobile menu",
       "href": "/#features",
       "normalizedHref": "/",
       "rel": ""
@@ -1048,8 +1075,8 @@
     {
       "page": "/guides/bo7-cheat-requirements/",
       "region": "header",
-      "text": "Plans mobile menu",
-      "normalized": "plans mobile menu",
+      "text": "Pricing plans mobile menu",
+      "normalized": "pricing plans mobile menu",
       "href": "/#products",
       "normalizedHref": "/",
       "rel": ""
@@ -1057,8 +1084,8 @@
     {
       "page": "/guides/bo7-cheat-requirements/",
       "region": "header",
-      "text": "Cloud DMA mobile menu",
-      "normalized": "cloud dma mobile menu",
+      "text": "Hyper-V Cloud DMA mobile menu",
+      "normalized": "hyper-v cloud dma mobile menu",
       "href": "/cloud-dma/",
       "normalizedHref": "/cloud-dma/",
       "rel": ""
@@ -1066,8 +1093,8 @@
     {
       "page": "/guides/bo7-cheat-requirements/",
       "region": "header",
-      "text": "HWID Spoofer mobile menu",
-      "normalized": "hwid spoofer mobile menu",
+      "text": "HWID utility mobile menu",
+      "normalized": "hwid utility mobile menu",
       "href": "/hwid-spoofer/",
       "normalizedHref": "/hwid-spoofer/",
       "rel": ""
@@ -1075,8 +1102,8 @@
     {
       "page": "/guides/bo7-cheat-requirements/",
       "region": "header",
-      "text": "Requirements mobile menu",
-      "normalized": "requirements mobile menu",
+      "text": "PC compatibility mobile menu",
+      "normalized": "pc compatibility mobile menu",
       "href": "/guides/bo7-cheat-requirements/",
       "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
@@ -1084,8 +1111,8 @@
     {
       "page": "/guides/bo7-cheat-requirements/",
       "region": "header",
-      "text": "FAQ mobile menu",
-      "normalized": "faq mobile menu",
+      "text": "Pre-purchase FAQ mobile menu",
+      "normalized": "pre-purchase faq mobile menu",
       "href": "/faq/",
       "normalizedHref": "/faq/",
       "rel": ""
@@ -1093,8 +1120,8 @@
     {
       "page": "/guides/bo7-cheat-requirements/",
       "region": "header",
-      "text": "Support mobile menu",
-      "normalized": "support mobile menu",
+      "text": "Help desk mobile menu",
+      "normalized": "help desk mobile menu",
       "href": "/support/",
       "normalizedHref": "/support/",
       "rel": ""
@@ -1147,28 +1174,10 @@
     {
       "page": "/guides/bo7-cheat-requirements/",
       "region": "body",
-      "text": "BO7 PC compatibility requirements",
-      "normalized": "bo7 pc compatibility requirements",
-      "href": "/guides/bo7-cheat-requirements/",
-      "normalizedHref": "/guides/bo7-cheat-requirements/",
-      "rel": ""
-    },
-    {
-      "page": "/guides/bo7-cheat-requirements/",
-      "region": "body",
-      "text": "checkout placeholder",
-      "normalized": "checkout placeholder",
-      "href": "/go/",
-      "normalizedHref": null,
-      "rel": ""
-    },
-    {
-      "page": "/guides/bo7-cheat-requirements/",
-      "region": "body",
       "text": "Share on X",
       "normalized": "share on x",
-      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;text=Black%20Ops%207%20Cheat%20System%20Requirements%20%7C%20PC%20Guide",
-      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;text=Black%20Ops%207%20Cheat%20System%20Requirements%20%7C%20PC%20Guide",
+      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;text=Black%20Ops%207%20Cheat%20Requirements%20%7C%20Full%20Windows%20Guide",
+      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;text=Black%20Ops%207%20Cheat%20Requirements%20%7C%20Full%20Windows%20Guide",
       "rel": "noopener noreferrer"
     },
     {
@@ -1185,8 +1194,8 @@
       "region": "body",
       "text": "Share on Telegram",
       "normalized": "share on telegram",
-      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;text=Black%20Ops%207%20Cheat%20System%20Requirements%20%7C%20PC%20Guide",
-      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;text=Black%20Ops%207%20Cheat%20System%20Requirements%20%7C%20PC%20Guide",
+      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;text=Black%20Ops%207%20Cheat%20Requirements%20%7C%20Full%20Windows%20Guide",
+      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;text=Black%20Ops%207%20Cheat%20Requirements%20%7C%20Full%20Windows%20Guide",
       "rel": "noopener noreferrer"
     },
     {
@@ -1194,8 +1203,8 @@
       "region": "body",
       "text": "Share on Reddit",
       "normalized": "share on reddit",
-      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;title=Black%20Ops%207%20Cheat%20System%20Requirements%20%7C%20PC%20Guide",
-      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;title=Black%20Ops%207%20Cheat%20System%20Requirements%20%7C%20PC%20Guide",
+      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;title=Black%20Ops%207%20Cheat%20Requirements%20%7C%20Full%20Windows%20Guide",
+      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F&amp;title=Black%20Ops%207%20Cheat%20Requirements%20%7C%20Full%20Windows%20Guide",
       "rel": "noopener noreferrer"
     },
     {
@@ -1203,8 +1212,8 @@
       "region": "body",
       "text": "Share on WhatsApp",
       "normalized": "share on whatsapp",
-      "href": "https://wa.me/?text=Black%20Ops%207%20Cheat%20System%20Requirements%20%7C%20PC%20Guide%20https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F",
-      "normalizedHref": "https://wa.me/?text=Black%20Ops%207%20Cheat%20System%20Requirements%20%7C%20PC%20Guide%20https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F",
+      "href": "https://wa.me/?text=Black%20Ops%207%20Cheat%20Requirements%20%7C%20Full%20Windows%20Guide%20https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F",
+      "normalizedHref": "https://wa.me/?text=Black%20Ops%207%20Cheat%20Requirements%20%7C%20Full%20Windows%20Guide%20https%3A%2F%2Fbo7-cheats.com%2Fguides%2Fbo7-cheat-requirements%2F",
       "rel": "noopener noreferrer"
     },
     {
@@ -1282,10 +1291,10 @@
     {
       "page": "/guides/bo7-cheat-requirements/",
       "region": "footer",
-      "text": "Cloud DMA",
-      "normalized": "cloud dma",
-      "href": "/cloud-dma/",
-      "normalizedHref": "/cloud-dma/",
+      "text": "HWID Spoofer utility",
+      "normalized": "hwid spoofer utility",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
       "rel": ""
     },
     {
@@ -1408,8 +1417,8 @@
     {
       "page": "/hwid-spoofer/",
       "region": "header",
-      "text": "Features mobile menu",
-      "normalized": "features mobile menu",
+      "text": "Module features mobile menu",
+      "normalized": "module features mobile menu",
       "href": "/#features",
       "normalizedHref": "/",
       "rel": ""
@@ -1417,8 +1426,8 @@
     {
       "page": "/hwid-spoofer/",
       "region": "header",
-      "text": "Plans mobile menu",
-      "normalized": "plans mobile menu",
+      "text": "Pricing plans mobile menu",
+      "normalized": "pricing plans mobile menu",
       "href": "/#products",
       "normalizedHref": "/",
       "rel": ""
@@ -1426,8 +1435,8 @@
     {
       "page": "/hwid-spoofer/",
       "region": "header",
-      "text": "Cloud DMA mobile menu",
-      "normalized": "cloud dma mobile menu",
+      "text": "Hyper-V Cloud DMA mobile menu",
+      "normalized": "hyper-v cloud dma mobile menu",
       "href": "/cloud-dma/",
       "normalizedHref": "/cloud-dma/",
       "rel": ""
@@ -1435,8 +1444,8 @@
     {
       "page": "/hwid-spoofer/",
       "region": "header",
-      "text": "HWID Spoofer mobile menu",
-      "normalized": "hwid spoofer mobile menu",
+      "text": "HWID utility mobile menu",
+      "normalized": "hwid utility mobile menu",
       "href": "/hwid-spoofer/",
       "normalizedHref": "/hwid-spoofer/",
       "rel": ""
@@ -1444,8 +1453,8 @@
     {
       "page": "/hwid-spoofer/",
       "region": "header",
-      "text": "Requirements mobile menu",
-      "normalized": "requirements mobile menu",
+      "text": "PC compatibility mobile menu",
+      "normalized": "pc compatibility mobile menu",
       "href": "/guides/bo7-cheat-requirements/",
       "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
@@ -1453,8 +1462,8 @@
     {
       "page": "/hwid-spoofer/",
       "region": "header",
-      "text": "FAQ mobile menu",
-      "normalized": "faq mobile menu",
+      "text": "Pre-purchase FAQ mobile menu",
+      "normalized": "pre-purchase faq mobile menu",
       "href": "/faq/",
       "normalizedHref": "/faq/",
       "rel": ""
@@ -1462,8 +1471,8 @@
     {
       "page": "/hwid-spoofer/",
       "region": "header",
-      "text": "Support mobile menu",
-      "normalized": "support mobile menu",
+      "text": "Help desk mobile menu",
+      "normalized": "help desk mobile menu",
       "href": "/support/",
       "normalizedHref": "/support/",
       "rel": ""
@@ -1536,8 +1545,8 @@
       "region": "body",
       "text": "Share on X",
       "normalized": "share on x",
-      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20PC%20Product%20Details",
-      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20PC%20Product%20Details",
+      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20Ricochet%20%26%20PC%20Utility",
+      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20Ricochet%20%26%20PC%20Utility",
       "rel": "noopener noreferrer"
     },
     {
@@ -1554,8 +1563,8 @@
       "region": "body",
       "text": "Share on Telegram",
       "normalized": "share on telegram",
-      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20PC%20Product%20Details",
-      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20PC%20Product%20Details",
+      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20Ricochet%20%26%20PC%20Utility",
+      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20Ricochet%20%26%20PC%20Utility",
       "rel": "noopener noreferrer"
     },
     {
@@ -1563,8 +1572,8 @@
       "region": "body",
       "text": "Share on Reddit",
       "normalized": "share on reddit",
-      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;title=Black%20Ops%207%20HWID%20Spoofer%20%7C%20PC%20Product%20Details",
-      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;title=Black%20Ops%207%20HWID%20Spoofer%20%7C%20PC%20Product%20Details",
+      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;title=Black%20Ops%207%20HWID%20Spoofer%20%7C%20Ricochet%20%26%20PC%20Utility",
+      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F&amp;title=Black%20Ops%207%20HWID%20Spoofer%20%7C%20Ricochet%20%26%20PC%20Utility",
       "rel": "noopener noreferrer"
     },
     {
@@ -1572,8 +1581,8 @@
       "region": "body",
       "text": "Share on WhatsApp",
       "normalized": "share on whatsapp",
-      "href": "https://wa.me/?text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20PC%20Product%20Details%20https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F",
-      "normalizedHref": "https://wa.me/?text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20PC%20Product%20Details%20https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F",
+      "href": "https://wa.me/?text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20Ricochet%20%26%20PC%20Utility%20https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F",
+      "normalizedHref": "https://wa.me/?text=Black%20Ops%207%20HWID%20Spoofer%20%7C%20Ricochet%20%26%20PC%20Utility%20https%3A%2F%2Fbo7-cheats.com%2Fhwid-spoofer%2F",
       "rel": "noopener noreferrer"
     },
     {
@@ -1651,10 +1660,10 @@
     {
       "page": "/hwid-spoofer/",
       "region": "footer",
-      "text": "Cloud DMA",
-      "normalized": "cloud dma",
-      "href": "/cloud-dma/",
-      "normalizedHref": "/cloud-dma/",
+      "text": "HWID Spoofer utility",
+      "normalized": "hwid spoofer utility",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
       "rel": ""
     },
     {
@@ -1777,8 +1786,8 @@
     {
       "page": "/",
       "region": "header",
-      "text": "Features mobile menu",
-      "normalized": "features mobile menu",
+      "text": "Module features mobile menu",
+      "normalized": "module features mobile menu",
       "href": "/#features",
       "normalizedHref": "/",
       "rel": ""
@@ -1786,8 +1795,8 @@
     {
       "page": "/",
       "region": "header",
-      "text": "Plans mobile menu",
-      "normalized": "plans mobile menu",
+      "text": "Pricing plans mobile menu",
+      "normalized": "pricing plans mobile menu",
       "href": "/#products",
       "normalizedHref": "/",
       "rel": ""
@@ -1795,8 +1804,8 @@
     {
       "page": "/",
       "region": "header",
-      "text": "Cloud DMA mobile menu",
-      "normalized": "cloud dma mobile menu",
+      "text": "Hyper-V Cloud DMA mobile menu",
+      "normalized": "hyper-v cloud dma mobile menu",
       "href": "/cloud-dma/",
       "normalizedHref": "/cloud-dma/",
       "rel": ""
@@ -1804,8 +1813,8 @@
     {
       "page": "/",
       "region": "header",
-      "text": "HWID Spoofer mobile menu",
-      "normalized": "hwid spoofer mobile menu",
+      "text": "HWID utility mobile menu",
+      "normalized": "hwid utility mobile menu",
       "href": "/hwid-spoofer/",
       "normalizedHref": "/hwid-spoofer/",
       "rel": ""
@@ -1813,8 +1822,8 @@
     {
       "page": "/",
       "region": "header",
-      "text": "Requirements mobile menu",
-      "normalized": "requirements mobile menu",
+      "text": "PC compatibility mobile menu",
+      "normalized": "pc compatibility mobile menu",
       "href": "/guides/bo7-cheat-requirements/",
       "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
@@ -1822,8 +1831,8 @@
     {
       "page": "/",
       "region": "header",
-      "text": "FAQ mobile menu",
-      "normalized": "faq mobile menu",
+      "text": "Pre-purchase FAQ mobile menu",
+      "normalized": "pre-purchase faq mobile menu",
       "href": "/faq/",
       "normalizedHref": "/faq/",
       "rel": ""
@@ -1831,8 +1840,8 @@
     {
       "page": "/",
       "region": "header",
-      "text": "Support mobile menu",
-      "normalized": "support mobile menu",
+      "text": "Help desk mobile menu",
+      "normalized": "help desk mobile menu",
       "href": "/support/",
       "normalizedHref": "/support/",
       "rel": ""
@@ -1923,8 +1932,8 @@
       "region": "body",
       "text": "Share on X",
       "normalized": "share on x",
-      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;text=Black%20Ops%207%20Cheats%20for%20PC%20%7C%20Aimbot%20%26%20ESP",
-      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;text=Black%20Ops%207%20Cheats%20for%20PC%20%7C%20Aimbot%20%26%20ESP",
+      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;text=Black%20Ops%207%20PC%20Cheats%20%7C%20Aimbot%2C%20ESP%20%26%20Radar%20Tools",
+      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;text=Black%20Ops%207%20PC%20Cheats%20%7C%20Aimbot%2C%20ESP%20%26%20Radar%20Tools",
       "rel": "noopener noreferrer"
     },
     {
@@ -1941,8 +1950,8 @@
       "region": "body",
       "text": "Share on Telegram",
       "normalized": "share on telegram",
-      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;text=Black%20Ops%207%20Cheats%20for%20PC%20%7C%20Aimbot%20%26%20ESP",
-      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;text=Black%20Ops%207%20Cheats%20for%20PC%20%7C%20Aimbot%20%26%20ESP",
+      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;text=Black%20Ops%207%20PC%20Cheats%20%7C%20Aimbot%2C%20ESP%20%26%20Radar%20Tools",
+      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;text=Black%20Ops%207%20PC%20Cheats%20%7C%20Aimbot%2C%20ESP%20%26%20Radar%20Tools",
       "rel": "noopener noreferrer"
     },
     {
@@ -1950,8 +1959,8 @@
       "region": "body",
       "text": "Share on Reddit",
       "normalized": "share on reddit",
-      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;title=Black%20Ops%207%20Cheats%20for%20PC%20%7C%20Aimbot%20%26%20ESP",
-      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;title=Black%20Ops%207%20Cheats%20for%20PC%20%7C%20Aimbot%20%26%20ESP",
+      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;title=Black%20Ops%207%20PC%20Cheats%20%7C%20Aimbot%2C%20ESP%20%26%20Radar%20Tools",
+      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2F&amp;title=Black%20Ops%207%20PC%20Cheats%20%7C%20Aimbot%2C%20ESP%20%26%20Radar%20Tools",
       "rel": "noopener noreferrer"
     },
     {
@@ -1959,8 +1968,8 @@
       "region": "body",
       "text": "Share on WhatsApp",
       "normalized": "share on whatsapp",
-      "href": "https://wa.me/?text=Black%20Ops%207%20Cheats%20for%20PC%20%7C%20Aimbot%20%26%20ESP%20https%3A%2F%2Fbo7-cheats.com%2F",
-      "normalizedHref": "https://wa.me/?text=Black%20Ops%207%20Cheats%20for%20PC%20%7C%20Aimbot%20%26%20ESP%20https%3A%2F%2Fbo7-cheats.com%2F",
+      "href": "https://wa.me/?text=Black%20Ops%207%20PC%20Cheats%20%7C%20Aimbot%2C%20ESP%20%26%20Radar%20Tools%20https%3A%2F%2Fbo7-cheats.com%2F",
+      "normalizedHref": "https://wa.me/?text=Black%20Ops%207%20PC%20Cheats%20%7C%20Aimbot%2C%20ESP%20%26%20Radar%20Tools%20https%3A%2F%2Fbo7-cheats.com%2F",
       "rel": "noopener noreferrer"
     },
     {
@@ -2038,10 +2047,10 @@
     {
       "page": "/",
       "region": "footer",
-      "text": "Cloud DMA",
-      "normalized": "cloud dma",
-      "href": "/cloud-dma/",
-      "normalizedHref": "/cloud-dma/",
+      "text": "HWID Spoofer utility",
+      "normalized": "hwid spoofer utility",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
       "rel": ""
     },
     {
@@ -2164,8 +2173,8 @@
     {
       "page": "/privacy/",
       "region": "header",
-      "text": "Features mobile menu",
-      "normalized": "features mobile menu",
+      "text": "Module features mobile menu",
+      "normalized": "module features mobile menu",
       "href": "/#features",
       "normalizedHref": "/",
       "rel": ""
@@ -2173,8 +2182,8 @@
     {
       "page": "/privacy/",
       "region": "header",
-      "text": "Plans mobile menu",
-      "normalized": "plans mobile menu",
+      "text": "Pricing plans mobile menu",
+      "normalized": "pricing plans mobile menu",
       "href": "/#products",
       "normalizedHref": "/",
       "rel": ""
@@ -2182,8 +2191,8 @@
     {
       "page": "/privacy/",
       "region": "header",
-      "text": "Cloud DMA mobile menu",
-      "normalized": "cloud dma mobile menu",
+      "text": "Hyper-V Cloud DMA mobile menu",
+      "normalized": "hyper-v cloud dma mobile menu",
       "href": "/cloud-dma/",
       "normalizedHref": "/cloud-dma/",
       "rel": ""
@@ -2191,8 +2200,8 @@
     {
       "page": "/privacy/",
       "region": "header",
-      "text": "HWID Spoofer mobile menu",
-      "normalized": "hwid spoofer mobile menu",
+      "text": "HWID utility mobile menu",
+      "normalized": "hwid utility mobile menu",
       "href": "/hwid-spoofer/",
       "normalizedHref": "/hwid-spoofer/",
       "rel": ""
@@ -2200,8 +2209,8 @@
     {
       "page": "/privacy/",
       "region": "header",
-      "text": "Requirements mobile menu",
-      "normalized": "requirements mobile menu",
+      "text": "PC compatibility mobile menu",
+      "normalized": "pc compatibility mobile menu",
       "href": "/guides/bo7-cheat-requirements/",
       "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
@@ -2209,8 +2218,8 @@
     {
       "page": "/privacy/",
       "region": "header",
-      "text": "FAQ mobile menu",
-      "normalized": "faq mobile menu",
+      "text": "Pre-purchase FAQ mobile menu",
+      "normalized": "pre-purchase faq mobile menu",
       "href": "/faq/",
       "normalizedHref": "/faq/",
       "rel": ""
@@ -2218,8 +2227,8 @@
     {
       "page": "/privacy/",
       "region": "header",
-      "text": "Support mobile menu",
-      "normalized": "support mobile menu",
+      "text": "Help desk mobile menu",
+      "normalized": "help desk mobile menu",
       "href": "/support/",
       "normalizedHref": "/support/",
       "rel": ""
@@ -2238,8 +2247,8 @@
       "region": "body",
       "text": "Share on X",
       "normalized": "share on x",
-      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;text=BO7%20Cheats%20Privacy%20Policy",
-      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;text=BO7%20Cheats%20Privacy%20Policy",
+      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;text=BO7%20Cheats%20Privacy%20Policy%20%7C%20Cookies%2C%20Analytics%20%26%20Data",
+      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;text=BO7%20Cheats%20Privacy%20Policy%20%7C%20Cookies%2C%20Analytics%20%26%20Data",
       "rel": "noopener noreferrer"
     },
     {
@@ -2256,8 +2265,8 @@
       "region": "body",
       "text": "Share on Telegram",
       "normalized": "share on telegram",
-      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;text=BO7%20Cheats%20Privacy%20Policy",
-      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;text=BO7%20Cheats%20Privacy%20Policy",
+      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;text=BO7%20Cheats%20Privacy%20Policy%20%7C%20Cookies%2C%20Analytics%20%26%20Data",
+      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;text=BO7%20Cheats%20Privacy%20Policy%20%7C%20Cookies%2C%20Analytics%20%26%20Data",
       "rel": "noopener noreferrer"
     },
     {
@@ -2265,8 +2274,8 @@
       "region": "body",
       "text": "Share on Reddit",
       "normalized": "share on reddit",
-      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;title=BO7%20Cheats%20Privacy%20Policy",
-      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;title=BO7%20Cheats%20Privacy%20Policy",
+      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;title=BO7%20Cheats%20Privacy%20Policy%20%7C%20Cookies%2C%20Analytics%20%26%20Data",
+      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F&amp;title=BO7%20Cheats%20Privacy%20Policy%20%7C%20Cookies%2C%20Analytics%20%26%20Data",
       "rel": "noopener noreferrer"
     },
     {
@@ -2274,8 +2283,8 @@
       "region": "body",
       "text": "Share on WhatsApp",
       "normalized": "share on whatsapp",
-      "href": "https://wa.me/?text=BO7%20Cheats%20Privacy%20Policy%20https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F",
-      "normalizedHref": "https://wa.me/?text=BO7%20Cheats%20Privacy%20Policy%20https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F",
+      "href": "https://wa.me/?text=BO7%20Cheats%20Privacy%20Policy%20%7C%20Cookies%2C%20Analytics%20%26%20Data%20https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F",
+      "normalizedHref": "https://wa.me/?text=BO7%20Cheats%20Privacy%20Policy%20%7C%20Cookies%2C%20Analytics%20%26%20Data%20https%3A%2F%2Fbo7-cheats.com%2Fprivacy%2F",
       "rel": "noopener noreferrer"
     },
     {
@@ -2353,10 +2362,10 @@
     {
       "page": "/privacy/",
       "region": "footer",
-      "text": "Cloud DMA",
-      "normalized": "cloud dma",
-      "href": "/cloud-dma/",
-      "normalizedHref": "/cloud-dma/",
+      "text": "HWID Spoofer utility",
+      "normalized": "hwid spoofer utility",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
       "rel": ""
     },
     {
@@ -2479,8 +2488,8 @@
     {
       "page": "/support/",
       "region": "header",
-      "text": "Features mobile menu",
-      "normalized": "features mobile menu",
+      "text": "Module features mobile menu",
+      "normalized": "module features mobile menu",
       "href": "/#features",
       "normalizedHref": "/",
       "rel": ""
@@ -2488,8 +2497,8 @@
     {
       "page": "/support/",
       "region": "header",
-      "text": "Plans mobile menu",
-      "normalized": "plans mobile menu",
+      "text": "Pricing plans mobile menu",
+      "normalized": "pricing plans mobile menu",
       "href": "/#products",
       "normalizedHref": "/",
       "rel": ""
@@ -2497,8 +2506,8 @@
     {
       "page": "/support/",
       "region": "header",
-      "text": "Cloud DMA mobile menu",
-      "normalized": "cloud dma mobile menu",
+      "text": "Hyper-V Cloud DMA mobile menu",
+      "normalized": "hyper-v cloud dma mobile menu",
       "href": "/cloud-dma/",
       "normalizedHref": "/cloud-dma/",
       "rel": ""
@@ -2506,8 +2515,8 @@
     {
       "page": "/support/",
       "region": "header",
-      "text": "HWID Spoofer mobile menu",
-      "normalized": "hwid spoofer mobile menu",
+      "text": "HWID utility mobile menu",
+      "normalized": "hwid utility mobile menu",
       "href": "/hwid-spoofer/",
       "normalizedHref": "/hwid-spoofer/",
       "rel": ""
@@ -2515,8 +2524,8 @@
     {
       "page": "/support/",
       "region": "header",
-      "text": "Requirements mobile menu",
-      "normalized": "requirements mobile menu",
+      "text": "PC compatibility mobile menu",
+      "normalized": "pc compatibility mobile menu",
       "href": "/guides/bo7-cheat-requirements/",
       "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
@@ -2524,8 +2533,8 @@
     {
       "page": "/support/",
       "region": "header",
-      "text": "FAQ mobile menu",
-      "normalized": "faq mobile menu",
+      "text": "Pre-purchase FAQ mobile menu",
+      "normalized": "pre-purchase faq mobile menu",
       "href": "/faq/",
       "normalizedHref": "/faq/",
       "rel": ""
@@ -2533,8 +2542,8 @@
     {
       "page": "/support/",
       "region": "header",
-      "text": "Support mobile menu",
-      "normalized": "support mobile menu",
+      "text": "Help desk mobile menu",
+      "normalized": "help desk mobile menu",
       "href": "/support/",
       "normalizedHref": "/support/",
       "rel": ""
@@ -2551,8 +2560,8 @@
     {
       "page": "/support/",
       "region": "body",
-      "text": "pre-purchase FAQ",
-      "normalized": "pre-purchase faq",
+      "text": "pre-purchase FAQ index",
+      "normalized": "pre-purchase faq index",
       "href": "/faq/",
       "normalizedHref": "/faq/",
       "rel": ""
@@ -2560,10 +2569,46 @@
     {
       "page": "/support/",
       "region": "body",
+      "text": "Windows PC compatibility checklist",
+      "normalized": "windows pc compatibility checklist",
+      "href": "/guides/bo7-cheat-requirements/",
+      "normalizedHref": "/guides/bo7-cheat-requirements/",
+      "rel": ""
+    },
+    {
+      "page": "/support/",
+      "region": "body",
+      "text": "Cloud DMA Hyper-V licensing overview",
+      "normalized": "cloud dma hyper-v licensing overview",
+      "href": "/cloud-dma/",
+      "normalizedHref": "/cloud-dma/",
+      "rel": ""
+    },
+    {
+      "page": "/support/",
+      "region": "body",
+      "text": "Black Ops 7 HWID utility page",
+      "normalized": "black ops 7 hwid utility page",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
+      "rel": ""
+    },
+    {
+      "page": "/support/",
+      "region": "body",
+      "text": "Black Ops 7 plan comparison",
+      "normalized": "black ops 7 plan comparison",
+      "href": "/#products",
+      "normalizedHref": "/",
+      "rel": ""
+    },
+    {
+      "page": "/support/",
+      "region": "body",
       "text": "Share on X",
       "normalized": "share on x",
-      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;text=BO7%20Cheats%20Support%20%7C%20Contact",
-      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;text=BO7%20Cheats%20Support%20%7C%20Contact",
+      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;text=BO7%20Cheats%20Support%20Desk%20%7C%20Orders%2C%20Setup%20%26%20Billing",
+      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;text=BO7%20Cheats%20Support%20Desk%20%7C%20Orders%2C%20Setup%20%26%20Billing",
       "rel": "noopener noreferrer"
     },
     {
@@ -2580,8 +2625,8 @@
       "region": "body",
       "text": "Share on Telegram",
       "normalized": "share on telegram",
-      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;text=BO7%20Cheats%20Support%20%7C%20Contact",
-      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;text=BO7%20Cheats%20Support%20%7C%20Contact",
+      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;text=BO7%20Cheats%20Support%20Desk%20%7C%20Orders%2C%20Setup%20%26%20Billing",
+      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;text=BO7%20Cheats%20Support%20Desk%20%7C%20Orders%2C%20Setup%20%26%20Billing",
       "rel": "noopener noreferrer"
     },
     {
@@ -2589,8 +2634,8 @@
       "region": "body",
       "text": "Share on Reddit",
       "normalized": "share on reddit",
-      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;title=BO7%20Cheats%20Support%20%7C%20Contact",
-      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;title=BO7%20Cheats%20Support%20%7C%20Contact",
+      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;title=BO7%20Cheats%20Support%20Desk%20%7C%20Orders%2C%20Setup%20%26%20Billing",
+      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F&amp;title=BO7%20Cheats%20Support%20Desk%20%7C%20Orders%2C%20Setup%20%26%20Billing",
       "rel": "noopener noreferrer"
     },
     {
@@ -2598,8 +2643,8 @@
       "region": "body",
       "text": "Share on WhatsApp",
       "normalized": "share on whatsapp",
-      "href": "https://wa.me/?text=BO7%20Cheats%20Support%20%7C%20Contact%20https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F",
-      "normalizedHref": "https://wa.me/?text=BO7%20Cheats%20Support%20%7C%20Contact%20https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F",
+      "href": "https://wa.me/?text=BO7%20Cheats%20Support%20Desk%20%7C%20Orders%2C%20Setup%20%26%20Billing%20https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F",
+      "normalizedHref": "https://wa.me/?text=BO7%20Cheats%20Support%20Desk%20%7C%20Orders%2C%20Setup%20%26%20Billing%20https%3A%2F%2Fbo7-cheats.com%2Fsupport%2F",
       "rel": "noopener noreferrer"
     },
     {
@@ -2677,10 +2722,10 @@
     {
       "page": "/support/",
       "region": "footer",
-      "text": "Cloud DMA",
-      "normalized": "cloud dma",
-      "href": "/cloud-dma/",
-      "normalizedHref": "/cloud-dma/",
+      "text": "HWID Spoofer utility",
+      "normalized": "hwid spoofer utility",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
       "rel": ""
     },
     {
@@ -2803,8 +2848,8 @@
     {
       "page": "/terms/",
       "region": "header",
-      "text": "Features mobile menu",
-      "normalized": "features mobile menu",
+      "text": "Module features mobile menu",
+      "normalized": "module features mobile menu",
       "href": "/#features",
       "normalizedHref": "/",
       "rel": ""
@@ -2812,8 +2857,8 @@
     {
       "page": "/terms/",
       "region": "header",
-      "text": "Plans mobile menu",
-      "normalized": "plans mobile menu",
+      "text": "Pricing plans mobile menu",
+      "normalized": "pricing plans mobile menu",
       "href": "/#products",
       "normalizedHref": "/",
       "rel": ""
@@ -2821,8 +2866,8 @@
     {
       "page": "/terms/",
       "region": "header",
-      "text": "Cloud DMA mobile menu",
-      "normalized": "cloud dma mobile menu",
+      "text": "Hyper-V Cloud DMA mobile menu",
+      "normalized": "hyper-v cloud dma mobile menu",
       "href": "/cloud-dma/",
       "normalizedHref": "/cloud-dma/",
       "rel": ""
@@ -2830,8 +2875,8 @@
     {
       "page": "/terms/",
       "region": "header",
-      "text": "HWID Spoofer mobile menu",
-      "normalized": "hwid spoofer mobile menu",
+      "text": "HWID utility mobile menu",
+      "normalized": "hwid utility mobile menu",
       "href": "/hwid-spoofer/",
       "normalizedHref": "/hwid-spoofer/",
       "rel": ""
@@ -2839,8 +2884,8 @@
     {
       "page": "/terms/",
       "region": "header",
-      "text": "Requirements mobile menu",
-      "normalized": "requirements mobile menu",
+      "text": "PC compatibility mobile menu",
+      "normalized": "pc compatibility mobile menu",
       "href": "/guides/bo7-cheat-requirements/",
       "normalizedHref": "/guides/bo7-cheat-requirements/",
       "rel": ""
@@ -2848,8 +2893,8 @@
     {
       "page": "/terms/",
       "region": "header",
-      "text": "FAQ mobile menu",
-      "normalized": "faq mobile menu",
+      "text": "Pre-purchase FAQ mobile menu",
+      "normalized": "pre-purchase faq mobile menu",
       "href": "/faq/",
       "normalizedHref": "/faq/",
       "rel": ""
@@ -2857,8 +2902,8 @@
     {
       "page": "/terms/",
       "region": "header",
-      "text": "Support mobile menu",
-      "normalized": "support mobile menu",
+      "text": "Help desk mobile menu",
+      "normalized": "help desk mobile menu",
       "href": "/support/",
       "normalizedHref": "/support/",
       "rel": ""
@@ -2877,8 +2922,8 @@
       "region": "body",
       "text": "Share on X",
       "normalized": "share on x",
-      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;text=BO7%20Cheats%20Terms%20%26%20Conditions",
-      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;text=BO7%20Cheats%20Terms%20%26%20Conditions",
+      "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;text=BO7%20Cheats%20Terms%20of%20Service%20%7C%20Site%20%26%20Checkout%20Rules",
+      "normalizedHref": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;text=BO7%20Cheats%20Terms%20of%20Service%20%7C%20Site%20%26%20Checkout%20Rules",
       "rel": "noopener noreferrer"
     },
     {
@@ -2895,8 +2940,8 @@
       "region": "body",
       "text": "Share on Telegram",
       "normalized": "share on telegram",
-      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;text=BO7%20Cheats%20Terms%20%26%20Conditions",
-      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;text=BO7%20Cheats%20Terms%20%26%20Conditions",
+      "href": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;text=BO7%20Cheats%20Terms%20of%20Service%20%7C%20Site%20%26%20Checkout%20Rules",
+      "normalizedHref": "https://t.me/share/url?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;text=BO7%20Cheats%20Terms%20of%20Service%20%7C%20Site%20%26%20Checkout%20Rules",
       "rel": "noopener noreferrer"
     },
     {
@@ -2904,8 +2949,8 @@
       "region": "body",
       "text": "Share on Reddit",
       "normalized": "share on reddit",
-      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;title=BO7%20Cheats%20Terms%20%26%20Conditions",
-      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;title=BO7%20Cheats%20Terms%20%26%20Conditions",
+      "href": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;title=BO7%20Cheats%20Terms%20of%20Service%20%7C%20Site%20%26%20Checkout%20Rules",
+      "normalizedHref": "https://reddit.com/submit?url=https%3A%2F%2Fbo7-cheats.com%2Fterms%2F&amp;title=BO7%20Cheats%20Terms%20of%20Service%20%7C%20Site%20%26%20Checkout%20Rules",
       "rel": "noopener noreferrer"
     },
     {
@@ -2913,8 +2958,8 @@
       "region": "body",
       "text": "Share on WhatsApp",
       "normalized": "share on whatsapp",
-      "href": "https://wa.me/?text=BO7%20Cheats%20Terms%20%26%20Conditions%20https%3A%2F%2Fbo7-cheats.com%2Fterms%2F",
-      "normalizedHref": "https://wa.me/?text=BO7%20Cheats%20Terms%20%26%20Conditions%20https%3A%2F%2Fbo7-cheats.com%2Fterms%2F",
+      "href": "https://wa.me/?text=BO7%20Cheats%20Terms%20of%20Service%20%7C%20Site%20%26%20Checkout%20Rules%20https%3A%2F%2Fbo7-cheats.com%2Fterms%2F",
+      "normalizedHref": "https://wa.me/?text=BO7%20Cheats%20Terms%20of%20Service%20%7C%20Site%20%26%20Checkout%20Rules%20https%3A%2F%2Fbo7-cheats.com%2Fterms%2F",
       "rel": "noopener noreferrer"
     },
     {
@@ -2992,10 +3037,10 @@
     {
       "page": "/terms/",
       "region": "footer",
-      "text": "Cloud DMA",
-      "normalized": "cloud dma",
-      "href": "/cloud-dma/",
-      "normalizedHref": "/cloud-dma/",
+      "text": "HWID Spoofer utility",
+      "normalized": "hwid spoofer utility",
+      "href": "/hwid-spoofer/",
+      "normalizedHref": "/hwid-spoofer/",
       "rel": ""
     },
     {

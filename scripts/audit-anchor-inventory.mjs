@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { INDEXABLE_MONEY_ROUTES, SITE_URL } from '../config/site.mjs';
+import { contentBodyHtml } from './lib/contentBodyHtml.mjs';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.join(root, '..');
@@ -97,11 +98,9 @@ function normalizeHref(href) {
   return p;
 }
 
-/** Body rules apply only to main copy (matches verify-anchor-text scope). */
-function contentBodyHtml(html) {
-  const article = html.match(/<article[^>]*class="[^"]*content-markdown[\s\S]*?<\/article>/i)?.[0];
-  if (article) return article;
-  return html.match(/id="abi-overview"[\s\S]*?<\/section>/i)?.[0] ?? '';
+/** Body rules apply only to main editorial copy (matches verify-anchor-text scope). */
+function bodyScopeHtml(html) {
+  return contentBodyHtml(html);
 }
 
 function extractAnchors(html, page, scopeHtml = html) {
@@ -167,6 +166,10 @@ function auditPage(entries, page) {
           errors.push(
             `${page} [${region}]: label "${hits[0].text}" points to ${[...hrefs].join(' and ')}`,
           );
+        } else if (region === 'footer') {
+          errors.push(
+            `${page} [footer]: repeated anchor "${hits[0].text}" (${hits.length}×) → ${[...hrefs][0]}`,
+          );
         }
       }
     }
@@ -200,11 +203,17 @@ function auditPage(entries, page) {
   }
 
   for (const [href, hits] of bodyByHref) {
-    if (hits.length > 1) {
-      errors.push(`${page} [body]: ${hits.length}× link to ${href}`);
-    }
     if (href === page || href === page.replace(/\/$/, '')) {
       errors.push(`${page} [body]: self-link ${href}`);
+    }
+  }
+
+  for (const [norm, hits] of bodyByText) {
+    if (hits.length > 1) {
+      const hrefs = new Set(hits.map((h) => h.normalizedHref));
+      if (hrefs.size === 1) {
+        errors.push(`${page} [body]: repeated anchor "${hits[0].text}" (${hits.length}×)`);
+      }
     }
   }
 
@@ -226,7 +235,7 @@ function main() {
     const html = fs.readFileSync(file, 'utf8');
     const allEntries = extractAnchors(html, page, html);
     inventory.push(...allEntries);
-    const bodyChunk = contentBodyHtml(html);
+    const bodyChunk = bodyScopeHtml(html);
     const bodyEntries = bodyChunk ? extractAnchors(html, page, bodyChunk) : [];
     const chromeEntries = allEntries.filter((e) => e.region !== 'body');
     const { bodyByText } = auditPage([...chromeEntries, ...bodyEntries], page);

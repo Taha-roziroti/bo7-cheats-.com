@@ -29,6 +29,15 @@ export const en: Translations = {
     { href: '/faq/', label: 'FAQ' },
     { href: '/support/', label: 'Support' },
   ],
+  navMobile: [
+    { href: '/#features', label: 'Module features' },
+    { href: '/#products', label: 'Pricing plans' },
+    { href: '/cloud-dma/', label: 'Hyper-V Cloud DMA' },
+    { href: '/hwid-spoofer/', label: 'HWID utility' },
+    { href: '/guides/bo7-cheat-requirements/', label: 'PC compatibility' },
+    { href: '/faq/', label: 'Pre-purchase FAQ' },
+    { href: '/support/', label: 'Help desk' },
+  ],
   hero: {
     status: 'Windows 10/11 · Ricochet environments',
     eyebrow: PLACEHOLDER_COPY.eyebrow,
@@ -226,42 +235,53 @@ export const en: Translations = {
   },
   support: {
     eyebrow: 'Support',
-    title: 'Support placeholder',
-    subtitle: PLACEHOLDER_COPY.subtitle,
+    title: 'Contact BO7 Cheats support',
+    subtitle:
+      'Send your order email, Windows build, virtualization status, and any loader or Hyper-V error text. The more specific your ticket, the faster we can point you to the right checklist or operator escalation path.',
     channels: [
       {
         icon: 'users',
-        title: 'Contact placeholder',
-        desc: PLACEHOLDER_COPY.feature,
+        title: 'Order help',
+        desc: 'Questions about checkout links, delivery timing, monthly versus lifetime plans, or whether your PC matches the module list on the main product page.',
         linkLabel: 'Open support',
         href: PRIMARY_CHECKOUT_PATH,
       },
       {
         icon: 'headphones',
         title: 'Email',
-        desc: PLACEHOLDER_COPY.feature,
+        desc: 'Direct mail for billing references, portal access issues, Cloud DMA activation blocks, and compatibility follow-ups after Windows updates.',
         linkLabel: SUPPORT_EMAIL,
         href: `mailto:${SUPPORT_EMAIL}`,
       },
       {
         icon: 'navFaq',
         title: 'FAQ',
-        desc: PLACEHOLDER_COPY.feature,
+        desc: 'Pre-purchase answers on plans, Cloud DMA third-party costs, HWID utilities, ban risk framing, and supported Windows builds.',
         linkLabel: 'View FAQ',
         href: '/faq/',
       },
       {
         icon: 'clock',
         title: 'Guides',
-        desc: PLACEHOLDER_COPY.feature,
+        desc: 'Step-by-step BO7 PC checklist covering TPM, Secure Boot, HVCI, and RAM before you buy Cloud DMA or the main package.',
         linkLabel: 'Open guide',
         href: '/guides/bo7-cheat-requirements/',
       },
     ],
     ticketTitle: 'Include when contacting support',
     ticketItems: [
-      { title: 'Detail one', desc: PLACEHOLDER_COPY.feature },
-      { title: 'Detail two', desc: PLACEHOLDER_COPY.feature },
+      {
+        title: 'Order reference',
+        desc: 'Checkout email, approximate purchase time, and whether the receipt says main BO7, Cloud DMA, or HWID utility.',
+      },
+      {
+        title: 'System snapshot',
+        desc: 'Windows edition, build number, virtualization status, and the exact error text from loader, portal, or Hyper-V dialogs.',
+      },
+      {
+        title: 'Recent changes',
+        desc: 'Note if you enabled Core Isolation, changed antivirus, or edited BIOS virtualization since the last successful load.',
+      },
     ],
   },
   faq: {
@@ -298,35 +318,176 @@ export const en: Translations = {
         {
           heading: 'Editorial scope',
           paragraphs: [
-            `${PLACEHOLDER_COPY.siteName} is an independent information site for Black Ops 7 on PC. We explain aimbot, ESP, radar, Cloud DMA, and HWID utilities with real in-game screenshots—not generic marketing claims.`,
-            'Product checkout happens through affiliate bridges under /go/. We do not host game clients or run anti-cheat software.',
+            `${PLACEHOLDER_COPY.siteName} is an independent information site for Black Ops 7 on PC. We explain aimbot, ESP, radar, Cloud DMA, and HWID utilities with real in-game screenshots—not generic marketing claims copied from other games.`,
+            'Product checkout happens through affiliate bridges under /go/. We do not host game clients, deliver license keys directly, or run anti-cheat software on your machine.',
+            'Screenshots and feature callouts on the homepage and product pages are chosen to show actual module layouts so you can compare visuals before you reach an external operator checkout.',
+          ],
+        },
+        {
+          heading: 'How we research compatibility',
+          paragraphs: [
+            'Windows build numbers, Hyper-V requirements, TPM, Secure Boot, and HVCI settings are checked against operator documentation and updated in the system-requirements guide when Microsoft or the publisher changes baselines.',
+            'Cloud DMA content explains the difference between the infrastructure license sold here and mandatory third-party services such as GREENWARD, static server hosting, and AWS billing so buyers can budget accurately.',
+            'HWID utility copy focuses on when the standalone product is appropriate versus relying on the main BO7 package alone, including notes about Ricochet environments on PC.',
+          ],
+        },
+        {
+          heading: 'Affiliate relationships and transparency',
+          paragraphs: [
+            'Purchases complete on third-party operator sites. We may earn a referral fee when you use our checkout links, which is disclosed in the terms and does not change the price shown on the operator portal.',
+            'We do not store payment card numbers or portal passwords. After checkout, delivery, updates, and refunds are handled entirely by the operator whose link you used.',
+            'If an offer changes, we aim to update listing prices and FAQ answers on the same business day we receive confirmation from the operator feed.',
           ],
         },
         {
           heading: 'Updates and accuracy',
           paragraphs: [
-            'Requirements, pricing, and feature lists mirror the operator portal when possible. When Activision or Windows changes compatibility, we update the money pages and system-requirements guide.',
+            'Requirements, pricing, and feature lists mirror the operator portal when possible. When Activision or Windows changes compatibility, we update the money pages and system-requirements guide first.',
+            'Use the FAQ and support channels if you spot a mismatch between this site and your portal—include a screenshot and we will reconcile the copy.',
+          ],
+        },
+        {
+          heading: 'Who should use this site',
+          paragraphs: [
+            'Players evaluating BO7 PC software who need plain-language setup context, visual proof of modules, and checklists before spending money on the wrong product variant.',
+            'We are not the game publisher, anti-cheat vendor, or operator support desk. For billing disputes after purchase, contact the operator listed on your receipt.',
+            'Journalists or community moderators may cite our requirements guide when explaining Hyper-V or HWID terminology, provided they link back to the canonical URL on bo7-cheats.com.',
           ],
         },
       ],
     },
     privacy: {
-      title: 'Privacy placeholder',
-      description: `Placeholder privacy policy for ${SITE_DOMAIN}.`,
+      title: 'Privacy Policy',
+      description: `How ${PLACEHOLDER_COPY.siteName} handles analytics, cookies, and affiliate checkout referrals on ${SITE_DOMAIN}.`,
       sections: [
         {
-          heading: 'Privacy placeholder',
-          paragraphs: [PLACEHOLDER_COPY.feature, PLACEHOLDER_COPY.subtitle],
+          heading: 'Information we collect',
+          paragraphs: [
+            'We collect standard web analytics (pages viewed, referrer, device class, approximate region) to keep content accurate and measure traffic. Checkout happens on third-party operator sites—we do not store payment card numbers or bank details on bo7-cheats.com.',
+            'Support email may include system diagnostics you voluntarily send. Treat those messages as sensitive and avoid attaching unrelated personal files.',
+          ],
+        },
+        {
+          heading: 'Cookies and analytics',
+          paragraphs: [
+            'We may use privacy-preserving analytics or tag managers to understand which guides and product pages help buyers make decisions. You can block cookies in your browser; core informational pages will still load.',
+            'We do not use cookies to resell browsing history to ad networks unrelated to measuring our own content performance.',
+            'Measurement scripts are limited to aggregate counts— we do not build individual advertising profiles from FAQ or requirements page views.',
+          ],
+        },
+        {
+          heading: 'Security',
+          paragraphs: [
+            'We apply TLS encryption for pages served on bo7-cheats.com and monitor access logs for unusual spikes that might indicate scraping or credential stuffing against support mail forms.',
+            'We do not sell mailing lists built from support correspondence.',
+          ],
+        },
+        {
+          heading: 'Affiliate checkout',
+          paragraphs: [
+            'Links marked as sponsored route to external checkout. Those providers apply their own privacy policies once you leave bo7-cheats.com, including how they store account credentials and hardware identifiers.',
+            'Affiliate bridges under /go/ exist only to hand off traffic—we do not index them for search and they should not collect additional data beyond the operator redirect.',
+          ],
+        },
+        {
+          heading: 'Data retention',
+          paragraphs: [
+            'Server logs rotate on a short schedule and are used for security monitoring. Support mail is kept only as long as needed to resolve your ticket unless law requires a longer period.',
+          ],
+        },
+        {
+          heading: 'Your choices',
+          paragraphs: [
+            'You may request deletion of support correspondence that includes personal data by emailing from the same address you used to contact us.',
+            'You may opt out of non-essential analytics by using browser privacy settings or extensions that block measurement scripts on bo7-cheats.com.',
+          ],
+        },
+        {
+          heading: 'Contact',
+          paragraphs: [
+            `Privacy questions can be sent to ${SUPPORT_EMAIL}. Include enough detail for us to locate your message without sharing unnecessary identifiers.`,
+          ],
+        },
+        {
+          heading: 'Children’s privacy',
+          paragraphs: [
+            'This site is intended for adults evaluating PC software purchases. We do not knowingly collect personal information from children under 13.',
+            'If you believe a minor submitted data through our support form, contact us promptly and we will delete the correspondence where legally permitted.',
+          ],
         },
       ],
     },
     terms: {
-      title: 'Terms placeholder',
-      description: `Placeholder terms for ${SITE_DOMAIN}.`,
+      title: 'Terms & Conditions',
+      description: `Rules for using ${SITE_DOMAIN} content and third-party checkout links for Black Ops 7 PC products.`,
       sections: [
         {
-          heading: 'Terms placeholder',
-          paragraphs: [PLACEHOLDER_COPY.feature, PLACEHOLDER_COPY.subtitle],
+          heading: 'Use of this site',
+          paragraphs: [
+            `${PLACEHOLDER_COPY.siteName} publishes informational copy, screenshots, and compatibility notes. We do not host game clients, operate anti-cheat systems, or guarantee any in-game outcome.`,
+            'You may link to our public pages with accurate anchor text. Scraping or mirroring entire articles without permission is not allowed.',
+          ],
+        },
+        {
+          heading: 'Third-party products',
+          paragraphs: [
+            'Purchases are completed through external operators linked from this domain. Their terms, refund policies, delivery windows, and support channels govern the software you buy.',
+            'Listing prices and feature names are provided for convenience. The operator checkout page is authoritative if numbers differ.',
+          ],
+        },
+        {
+          heading: 'Prohibited uses',
+          paragraphs: [
+            'Do not use this site to harass other players, publish stolen account data, or attempt to probe our infrastructure.',
+            'Do not misrepresent affiliation with the game publisher or anti-cheat vendors when discussing products referenced here.',
+            'Automated scraping that degrades site performance may result in access restrictions at the network edge.',
+          ],
+        },
+        {
+          heading: 'Dispute resolution',
+          paragraphs: [
+            'Content disputes should first be emailed to support with the URL in question. We will correct factual errors about pricing or requirements when verified with the operator.',
+            'Legal disputes unrelated to factual corrections should identify your jurisdiction so we can respond appropriately.',
+          ],
+        },
+        {
+          heading: 'Intellectual property',
+          paragraphs: [
+            'Game names and logos belong to their respective owners. Our editorial text, layout, and original screenshots are protected as site content.',
+          ],
+        },
+        {
+          heading: 'Liability',
+          paragraphs: [
+            'You are responsible for how you use any third-party software and for complying with the game publisher’s rules and local law.',
+            'We provide information “as is” without warranties. Service interruptions, outdated requirements, or operator downtime may occur.',
+          ],
+        },
+        {
+          heading: 'Changes',
+          paragraphs: [
+            'We may update these terms when checkout flows or analytics practices change. Continued use after an update constitutes acceptance of the revised rules.',
+          ],
+        },
+        {
+          heading: 'Governing context',
+          paragraphs: [
+            'These terms apply to your use of bo7-cheats.com only. They do not modify operator contracts, game end-user license agreements, or anti-cheat policies.',
+            'If any clause is unenforceable in your jurisdiction, the remaining sections still apply to the extent permitted by law.',
+          ],
+        },
+        {
+          heading: 'Feedback',
+          paragraphs: [
+            'Suggestions about clarity or missing compatibility notes are welcome through support mail. We may incorporate feedback into guides without owing compensation.',
+            'We do not guarantee implementation timelines for editorial requests.',
+          ],
+        },
+        {
+          heading: 'Contact',
+          paragraphs: [
+            `Questions about these terms can be emailed to ${SUPPORT_EMAIL} with the subject line “Terms inquiry” and the page URL you were reading.`,
+          ],
         },
       ],
     },

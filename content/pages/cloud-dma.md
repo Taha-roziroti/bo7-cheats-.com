@@ -1,6 +1,6 @@
 ---
 title: "Cloud DMA for Black Ops 7 | Setup & Requirements"
-description: "See how Cloud DMA for Black Ops 7 works, including its single-PC Hyper-V setup, required components and Windows requirements."
+description: "See how Cloud DMA for Black Ops 7 works on a single-PC Hyper-V split, which third-party services you must buy, and the Windows checks before checkout."
 slug: "/cloud-dma/"
 ---
 
@@ -42,9 +42,7 @@ You don't purchase a second computer or an external DMA box as part of the descr
 
 However, single-PC doesn't mean zero requirements. Your Windows setup needs to meet the conditions listed by the product.
 
-### Windows requirements
-
-The current Cloud DMA listing specifies:
+**Windows requirements.** The current Cloud DMA listing specifies:
 
 - Windows 10 or Windows 11, 64-bit
 - HVCI enabled
@@ -54,17 +52,13 @@ The current Cloud DMA listing specifies:
 
 The product also recommends Windows Pro, Enterprise or Education for its Hyper-V setup. Its installer notes should be followed for the particular Windows edition being used.
 
-### CPU virtualization
-
-Hyper-V needs hardware virtualization support.
+**CPU virtualization.** Hyper-V needs hardware virtualization support.
 
 The listing specifies Intel VT-x or AMD-V enabled in the computer's firmware.
 
 So, you'll need to check that your processor's virtualization option is available and enabled before trying to use this setup.
 
-### RAM and internet
-
-The listed minimum system memory is 8 GB.
+**RAM and internet.** The listed minimum system memory is 8 GB.
 
 The recommendation is 16 GB.
 
@@ -126,33 +120,13 @@ That's worth checking before you calculate your total budget.
 
 ## Common Cloud DMA questions
 
-### Do I need a second PC?
-
-No. The supplied product description uses a single-PC Hyper-V-based setup.
-
-### Do I need an external DMA box?
-
-The product listing specifically describes a configuration that doesn't require an external DMA box or USB DMA bridge.
-
-### Which Windows versions are supported?
-
-Windows 10 and Windows 11, 64-bit, are listed. The page recommends Windows Pro, Enterprise or Education for the Hyper-V setup and advises following the installer notes for the Windows edition.
-
-### How much RAM is required?
-
-The listed minimum is 8 GB, with 16 GB recommended.
-
-### Do I need CPU virtualization?
-
-Yes. Intel VT-x or AMD-V must be enabled in firmware for the Hyper-V environment.
-
-### Are GREENWARD, Static Server and AWS included?
-
-No. All three are listed as separate required purchases. Static Server and AWS are different products, and both are required.
-
-### Is Cloud DMA a monthly subscription?
-
-The supplied product page lists a lifetime option at $50. Other time-limited durations may be listed separately if made available.
+- **Do I need a second PC?** No. The supplied product description uses a single-PC Hyper-V-based setup.
+- **Do I need an external DMA box?** The product listing specifically describes a configuration that doesn't require an external DMA box or USB DMA bridge.
+- **Which Windows versions are supported?** Windows 10 and Windows 11, 64-bit, are listed. The page recommends Windows Pro, Enterprise or Education for the Hyper-V setup and advises following the installer notes for the Windows edition.
+- **How much RAM is required?** The listed minimum is 8 GB, with 16 GB recommended.
+- **Do I need CPU virtualization?** Yes. Intel VT-x or AMD-V must be enabled in firmware for the Hyper-V environment.
+- **Are GREENWARD, Static Server and AWS included?** No. All three are listed as separate required purchases. Static Server and AWS are different products, and both are required.
+- **Is Cloud DMA a monthly subscription?** The supplied product page lists a lifetime option at $50. Other time-limited durations may be listed separately if made available.
 
 ## Check the full setup before purchasing
 

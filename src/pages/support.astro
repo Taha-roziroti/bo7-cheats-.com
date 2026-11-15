@@ -34,15 +34,66 @@ const breadcrumbs = [
 
   <ContactSupportSection titleId="support-page-title" showTicketTips />
 
-  <section class="border-t border-border bg-muted/10 py-10 md:py-12">
-    <div class="mx-auto max-w-3xl px-5 text-sm leading-relaxed text-muted-foreground">
-      <p class="text-lg font-semibold text-foreground">Before you contact support</p>
-      <p class="mt-3">
-        Confirm the listed offers match your order: main product plans, plus optional Cloud DMA and HWID utilities on separate checkouts.
+  <article class="border-t border-border bg-muted/10 py-10 md:py-14">
+    <div class="prose prose-sm dark:prose-invert mx-auto max-w-3xl px-5 text-muted-foreground">
+      <h2 class="text-foreground">Before you contact support</h2>
+      <p>
+        Confirm which checkout you used: the main Black Ops 7 package, the optional Hyper-V Cloud DMA license, or the standalone HWID
+        utility. Each listing has different Windows, virtualization, and billing requirements, so the product name on your receipt speeds
+        up troubleshooting.
       </p>
-      <p class="mt-3">
-        Common answers live in the <a href="/faq/" class="text-primary underline underline-offset-2">pre-purchase FAQ</a>. Include your order email, Windows build, and any loader or Hyper-V error text when you write in.
+      <p>
+        Many setup questions are already answered in our
+        <a href="/faq/" class="text-primary underline underline-offset-2">pre-purchase FAQ index</a>. If your issue is compatibility
+        related, work through the
+        <a href="/guides/bo7-cheat-requirements/" class="text-primary underline underline-offset-2">Windows PC compatibility checklist</a>
+        first and note any item that does not match your DxDiag export.
+      </p>
+      <h2 class="text-foreground">Product-specific context</h2>
+      <p>
+        Cloud DMA buyers should capture Hyper-V role errors, GREENWARD activation status, and whether a static server or AWS line item is
+        still pending. Read the
+        <a href="/cloud-dma/" class="text-primary underline underline-offset-2">Cloud DMA Hyper-V licensing overview</a> so support knows
+        which third-party components you already purchased.
+      </p>
+      <p>
+        HWID utility orders should include whether Ricochet was running, your Windows build number, and whether Core Isolation or TPM
+        settings changed since install. The
+        <a href="/hwid-spoofer/" class="text-primary underline underline-offset-2">Black Ops 7 HWID utility page</a> lists the fields we
+        compare against operator tickets.
+      </p>
+      <h2 class="text-foreground">What to include in every ticket</h2>
+      <ul>
+        <li>Order email and approximate purchase time (main, Cloud DMA, or HWID).</li>
+        <li>Windows edition, build number, and whether Hyper-V or HVCI is enabled.</li>
+        <li>Exact error text from the loader, portal, or virtualization dialog—screenshots help.</li>
+        <li>Whether you recently changed BIOS virtualization, Secure Boot, or antivirus settings.</li>
+      </ul>
+      <p>
+        If you have not purchased yet, compare plan pricing on the
+        <a href="/#products" class="text-primary underline underline-offset-2">Black Ops 7 plan comparison</a> and mention which modules
+        you intend to enable so we can confirm they match your PC.
+      </p>
+      <h2 class="text-foreground">Main product troubleshooting</h2>
+      <p>
+        Portal login failures often trace to mismatched Windows builds or antivirus quarantining the loader. Attach the build number from
+        Settings → System → About and mention whether Defender controlled folder access is enabled. If modules fail to toggle, list which
+        features you expected from the homepage grid so we can confirm they are included in your plan tier.
+      </p>
+      <p>
+        Stream-proof or overlay questions should include your capture software and whether you run the game in fullscreen exclusive or borderless
+        mode. These details determine whether the issue is configuration-related or requires operator escalation.
+      </p>
+      <h2 class="text-foreground">Response expectations</h2>
+      <p>
+        We reply during business hours in UTC+5 and prioritize tickets that include complete diagnostics. Duplicate messages slow the queue—
+        update your original email thread instead of opening a second ticket. When an issue requires operator intervention, we explain what
+        to forward to their billing desk so you are not bounced between two support teams.
+      </p>
+      <p>
+        Refund or chargeback requests must go to the operator named on your receipt. We can clarify which product page you used before checkout,
+        but we cannot modify transactions completed on external portals.
       </p>
     </div>
-  </section>
+  </article>
 </BaseLayout>
