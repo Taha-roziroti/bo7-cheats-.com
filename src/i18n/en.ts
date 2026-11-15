@@ -312,7 +312,7 @@ export const en: Translations = {
   },
   legalPages: {
     about: {
-      title: 'What we publish on this domain',
+      title: 'About this BO7 cheats publisher and Black Ops guides',
       description: `How ${PLACEHOLDER_COPY.siteName} documents Black Ops 7 PC software, compatibility, and checkout.`,
       sections: [
         {
@@ -372,7 +372,8 @@ export const en: Translations = {
           paragraphs: [
             'We may use privacy-preserving analytics or tag managers to understand which guides and product pages help buyers make decisions. You can block cookies in your browser; core informational pages will still load.',
             'We do not use cookies to resell browsing history to ad networks unrelated to measuring our own content performance.',
-            'Measurement scripts are limited to aggregate counts— we do not build individual advertising profiles from FAQ or requirements page views.',
+            'Measurement scripts are limited to aggregate counts—we do not build individual advertising profiles from FAQ or requirements page views.',
+            'Aggregated traffic metrics never include payment card data collected on operator checkout domains.',
           ],
         },
         {
@@ -487,6 +488,12 @@ export const en: Translations = {
           heading: 'Contact',
           paragraphs: [
             `Questions about these terms can be emailed to ${SUPPORT_EMAIL} with the subject line “Terms inquiry” and the page URL you were reading.`,
+          ],
+        },
+        {
+          heading: 'Acceptable use reminders',
+          paragraphs: [
+            'Do not attempt to bypass rate limits, scrape private support data, or misrepresent operator pricing when linking to our checkout bridges.',
           ],
         },
       ],

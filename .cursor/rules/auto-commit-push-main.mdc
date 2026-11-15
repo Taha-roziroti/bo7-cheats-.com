@@ -1,0 +1,17 @@
+---
+description: After each completed task, commit all changes and push to origin main
+alwaysApply: true
+---
+
+# Auto commit and push to main
+
+For **bo7-cheats-.com**, when you finish a user-requested task (or a clear batch of related edits):
+
+1. Run `git status`. If there are no file changes, skip commit/push.
+2. Stage all relevant changes (`git add -A` or targeted adds). Never stage `.env`, credentials, or secrets.
+3. Commit with a concise message focused on **why** (1–2 sentences). If `user.name` / `user.email` are unset, use one-off flags only — do **not** run `git config` globally or locally:
+   - `git -c user.name="Taha-roziroti" -c user.email="Taha-roziroti@users.noreply.github.com" commit -m "..."`
+4. Push to **`origin main`** (`git push origin main`). Do **not** force-push unless the user explicitly asks.
+5. Briefly tell the user the commit hash and that `main` was pushed.
+
+Do not wait for the user to ask for commit/push after routine code work unless they say to skip git for that turn.

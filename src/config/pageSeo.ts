@@ -9,17 +9,17 @@ export interface PageSeoEntry {
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
-    title: 'Black Ops 7 PC Cheats | Aimbot, ESP & Radar Tools',
+    title: 'Black Ops 7 PC Cheats | Aimbot, ESP, Radar & Tools',
     description:
       'Explore Black Ops 7 cheats with aimbot, ESP, radar and recoil controls on PC. Review live screenshots, requirements, and monthly or lifetime plans.',
   },
   '/cloud-dma/': {
-    title: 'Cloud DMA for Black Ops 7 | Setup & Requirements',
+    title: 'Cloud DMA for Black Ops 7 | Setup & PC Requirements',
     description:
       'See how Cloud DMA for Black Ops 7 works on a single-PC Hyper-V split, which third-party services you must buy, and the Windows checks before checkout.',
   },
   '/hwid-spoofer/': {
-    title: 'Black Ops 7 HWID Spoofer | Ricochet & PC Utility',
+    title: 'Black Ops 7 HWID Spoofer for PC | Ricochet Utility',
     description:
       'Review the Black Ops 7 HWID spoofer listing, Ricochet compatibility notes, Windows administrator requirements, and monthly or lifetime checkout options.',
   },
@@ -29,12 +29,12 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Check Windows 10 and 11, TPM, Secure Boot, HVCI, virtualization, and RAM requirements for BO7 cheats, Cloud DMA, and the HWID utility before you purchase.',
   },
   '/faq/': {
-    title: 'Black Ops 7 Cheats FAQ | Plans, Setup & Support',
+    title: 'Black Ops 7 Cheats FAQ | Plans, Setup & Support Hub',
     description:
       'Get answers on BO7 cheat delivery, module toggles, ban risk, Windows builds, Cloud DMA billing, HWID utilities, and what to send support before checkout.',
   },
   '/support/': {
-    title: 'BO7 Cheats Support Desk | Orders, Setup & Billing',
+    title: 'BO7 Cheats Support Desk | Orders, Setup & Billing Help',
     description:
       'Contact BO7 Cheats support with your order email, Windows build, product purchased, and loader or Hyper-V errors so we can reply with accurate setup steps.',
   },
@@ -52,6 +52,16 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
     title: 'BO7 Cheats Terms of Service | Site & Checkout Rules',
     description:
       'Terms for bo7-cheats.com content, affiliate checkout links, operator refunds, and your responsibilities under game publisher and local law.',
+  },
+  '/blog/': {
+    title: 'BO7 Cheats Blog | Guides, Updates & PC Setup Notes',
+    description:
+      'Read BO7 setup notes, compatibility updates, and PC checklist articles from bo7-cheats.com when new posts are published on this hub.',
+  },
+  '/forum/': {
+    title: 'BO7 Cheats Community Forum | Q&A & Discussions',
+    description:
+      'Browse community questions on BO7 modules, Windows setup, Cloud DMA costs, and HWID utilities—placeholder threads until discussions go live.',
   },
 };
 

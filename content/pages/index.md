@@ -1,10 +1,10 @@
 ---
-title: "Black Ops 7 PC Cheats | Aimbot, ESP & Radar Tools"
+title: "Black Ops 7 PC Cheats | Aimbot, ESP, Radar & Tools"
 description: "Explore Black Ops 7 cheats with aimbot, ESP, radar and recoil controls on PC. Review live screenshots, requirements, and monthly or lifetime plans."
 slug: "/"
 ---
 
-# Black Ops 7 cheats for PC
+# BO7 cheats for PC: aimbot, radar & tools
 
 There's always that one player who somehow knows exactly where everyone is, never misses a shot, and seems to have absolutely no problem controlling recoil. You know the one. Makes you wonder what's going on behind that screen.
 

@@ -1,5 +1,5 @@
 ---
-title: "Black Ops 7 HWID Spoofer | Ricochet & PC Utility"
+title: "Black Ops 7 HWID Spoofer for PC | Ricochet Utility"
 description: "Review the Black Ops 7 HWID spoofer listing, Ricochet compatibility notes, Windows administrator requirements, and monthly or lifetime checkout options."
 slug: "/hwid-spoofer/"
 ---

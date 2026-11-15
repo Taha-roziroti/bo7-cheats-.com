@@ -48,10 +48,7 @@ const {
 const pathname = Astro.url.pathname;
 const routeOgImage = ogImageForPath(pathname);
 const ogImage = ogImageProp ?? routeOgImage;
-const legacyNoindex =
-  pathname.startsWith('/blog') ||
-  pathname.startsWith('/forum') ||
-  pathname.startsWith('/products/dota-2-cheats');
+const legacyNoindex = pathname.startsWith('/products/dota-2-cheats');
 const resolvedNoindex = noindex || legacyNoindex;
 const robotsContent = resolvedNoindex
   ? 'noindex, follow'
