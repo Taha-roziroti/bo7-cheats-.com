@@ -18,6 +18,7 @@ import { blogTagIcons } from '../../data/sectionIcons';
 import type { IconName } from '../../components/icons/types';
 import { Button } from '@/components/starwind/button';
 import { ROUTES } from '../../utils/path';
+import { blogHubIntroHtml } from '../../data/hubPageCopy';
 
 const seo = resolvePageSeo('/blog/');
 const breadcrumbs = [
@@ -61,6 +62,12 @@ const tagIcon = (tag: string): IconName => blogTagIcons[tag] ?? 'tag';
         <h1 id="blog-latest-title" class="section-header__title">{t.blog.latestTitle}</h1>
         <p class="section-header__subtitle">{t.blog.latestSubtitle}</p>
       </header>
+
+      <div
+        class="content-markdown prose prose-invert mt-8 max-w-3xl text-muted-foreground"
+        data-hub-body="true"
+        set:html={blogHubIntroHtml}
+      />
 
       <div class="mt-8 flex flex-col gap-4 lg:mt-10 lg:flex-row lg:items-end lg:justify-between lg:gap-6">
         <div

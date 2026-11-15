@@ -29,7 +29,7 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Check Windows 10 and 11, TPM, Secure Boot, HVCI, virtualization, and RAM requirements for BO7 cheats, Cloud DMA, and the HWID utility before you purchase.',
   },
   '/faq/': {
-    title: 'Black Ops 7 Cheats FAQ | Plans, Setup & Support Hub',
+    title: 'Frequently asked questions on Black Ops 7 cheats | Setup',
     description:
       'Get answers on BO7 cheat delivery, module toggles, ban risk, Windows builds, Cloud DMA billing, HWID utilities, and what to send support before checkout.',
   },
@@ -59,7 +59,7 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Read BO7 setup notes, compatibility updates, and PC checklist articles from bo7-cheats.com when new posts are published on this hub.',
   },
   '/forum/': {
-    title: 'BO7 Cheats Community Forum | Q&A & Discussions',
+    title: 'BO7 Cheats Community Forum | Black Ops 7 Q&A Hub',
     description:
       'Browse community questions on BO7 modules, Windows setup, Cloud DMA costs, and HWID utilities—placeholder threads until discussions go live.',
   },

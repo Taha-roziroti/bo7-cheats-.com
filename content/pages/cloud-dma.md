@@ -4,7 +4,7 @@ description: "See how Cloud DMA for Black Ops 7 works on a single-PC Hyper-V spl
 slug: "/cloud-dma/"
 ---
 
-# Cloud DMA for Black Ops 7
+# Cloud DMA for Black Ops 7: setup & requirements
 
 DMA is one of those terms that gets thrown around in cheat communities constantly. Sometimes it refers to a physical hardware setup. Sometimes a seller uses it to describe something completely different.
 

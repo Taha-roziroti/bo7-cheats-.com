@@ -22,6 +22,8 @@ const INDEXABLE_ROUTES = [
   '/support/',
   '/privacy/',
   '/terms/',
+  '/blog/',
+  '/forum/',
 ];
 
 const MONEY_ROUTES = new Set([

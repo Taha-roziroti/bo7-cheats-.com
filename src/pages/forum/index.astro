@@ -8,6 +8,7 @@ import { blogPosts, getBlogPostTimestamp } from '../../data/blog';
 import { resolvePageSeo } from '../../config/seo';
 import { breadcrumbSchema, collectionPageSchema } from '../../utils/schema';
 import { SITE_LOGO_ALT } from '../../utils/imageAlt';
+import { forumHubIntroHtml } from '../../data/hubPageCopy';
 
 const seo = resolvePageSeo('/forum/');
 const breadcrumbs = [{ name: 'Home', path: '/' }, { name: 'Forum', path: '/forum/' }];
@@ -20,7 +21,7 @@ const sourceTimestamp = (path?: string) => {
 ---
 
 <BaseLayout title={seo.title} description={seo.description} jsonLd={[
-  collectionPageSchema({ name: 'Community forum placeholder', description: seo.description, url: '/forum/' }),
+  collectionPageSchema({ name: 'Black Ops 7 community forum', description: seo.description, url: '/forum/' }),
   breadcrumbSchema(breadcrumbs),
 ]}>
   <section class="forum-page py-8 md:py-12">
@@ -29,14 +30,19 @@ const sourceTimestamp = (path?: string) => {
       <header class="forum-hero">
         <div>
           <p class="section-header__eyebrow">Community forum</p>
-          <h1>Forum placeholder</h1>
-          <p class="forum-hero__copy">Replace with your community positioning or remove this section before launch.</p>
+          <h1>Black Ops 7 community forum for BO7 Q&amp;A</h1>
+          <p class="forum-hero__copy">Structured discussions tied to BO7 guides, Windows setup, Cloud DMA, and HWID utilities.</p>
         </div>
         <a class="forum-create" href="/blog/"><Icon name="messageCircle" size={17} /> Explore the guides</a>
       </header>
 
       <div class="forum-layout">
         <main class="forum-main" aria-label="Community posts">
+          <div
+            class="content-markdown forum-hub-intro"
+            data-hub-body="true"
+            set:html={forumHubIntroHtml}
+          />
           <div class="forum-toolbar">
             <div class="forum-sort" role="group" aria-label="Post sorting">
               <button class="is-active" type="button" data-forum-sort="popular" aria-pressed="true">Popular</button>

@@ -208,8 +208,8 @@ function auditSitemap() {
     if (!loc.startsWith(SITE_URL)) {
       fail('technical', `sitemap: non-canonical host in ${loc}`);
     }
-    if (loc.includes('/blog/') || loc.includes('/forum/')) {
-      fail('technical', `sitemap: non-money URL should not be indexed: ${loc}`);
+    if (loc.includes('/products/dota-2-cheats') || loc.startsWith(`${SITE_URL}/cheats/`)) {
+      fail('technical', `sitemap: legacy product URL should not be listed: ${loc}`);
     }
     try {
       const pathname = new URL(loc).pathname;

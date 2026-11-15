@@ -38,5 +38,11 @@ export function contentBodyHtml(html) {
   const supportSection = html.match(/<section[^>]*id="support"[\s\S]*?<\/section>/i)?.[0];
   if (supportSection) return supportSection;
 
+  const hubBody = html.match(/data-hub-body="true"[\s\S]*?<\/div>\s*<\/div>/i)?.[0];
+  if (hubBody) return stripBreadcrumbNav(hubBody);
+
+  const forumMain = html.match(/class="forum-main"[\s\S]*?<\/main>/i)?.[0];
+  if (forumMain) return stripBreadcrumbNav(forumMain);
+
   return '';
 }
